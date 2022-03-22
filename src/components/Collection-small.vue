@@ -1,0 +1,67 @@
+<template>
+  <div class="collection">
+    <div class="collection-header">
+      <img class="collection-img"
+      :src="img_src"
+      />
+    </div>
+    <h3 class="collection-header-text" >
+      <slot name="collection-header-slot"></slot>
+    </h3>
+    <h1 class="collection-text">
+      <slot name="collection-text-slot"> </slot>
+    </h1>
+  </div>
+</template>
+
+<script>
+export default {
+  props: {
+    img_src: String,
+  }
+}
+</script>
+
+<style scoped>
+
+.collection {
+  /* padding-top: 20px; */
+  padding-bottom: 20px;
+  /* padding: 20px 40px; */
+  border-radius: 20px;
+  background-color: rgb(245, 245, 246);
+  margin-bottom: 40px;
+  /* box-shadow: 0 10px 40px 0 rgb(0 0 0 / 15%); */
+  /* box-shadow: 0px 9px 19px 3px rgba(0,0,0,0.1); */
+  min-height: 350px;
+}
+
+.collection-header {
+  margin-bottom: 20px;
+}
+
+.collection-header img {
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  max-width: 50px;
+  max-height: 50px;
+  vertical-align: middle;
+  /* display: inline-block; */
+}
+
+.collection-header h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+.collection-header-text {
+    font-size: 24px;
+    line-height: 175%;
+}
+.collection-text {
+  font-size: 18px;
+  line-height: 175%;
+}
+</style>

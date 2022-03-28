@@ -41,7 +41,7 @@ import CollectionBig from "./../components/Collection-big.vue";
         align="left"
         width="75"
         height="75"
-        src="images/work-experience.png"
+        src="/images/work-experience.png"
         alt="CV profil billede"
       />
       <h5 class="domain-header-mobile" style="font-weight: 600">Erhvervserfaring</h5>

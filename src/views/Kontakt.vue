@@ -55,7 +55,7 @@
         data-aos-duration="1000"
       >
         <p style="font-size: 20px; line-height; 24px;">
-          Så kan jeg findes på sociale medier eller via mail:
+          Så kan jeg findes på sociale medier eller via mail
         </p>
         <div class="col nopadding socials">
           <a

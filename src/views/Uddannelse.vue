@@ -44,7 +44,7 @@ import CollectionBig from "../components/Collection-big.vue";
         align="left"
         width="75"
         height="75"
-        src="images/school.png"
+        src="/images/school.png"
         alt="Billede af skole"
       />
       <h5 class="domain-header-mobile" style="font-weight: 600">Uddannelse</h5>

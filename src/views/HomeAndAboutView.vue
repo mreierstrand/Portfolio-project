@@ -14,6 +14,7 @@ import CollectionSmall from "../components/Collection-small.vue";
             height="100"
             class="header-img"
             src="../assets/images/CV-billede-farve.png"
+            alt="CV profil billede"
           />
         </RouterLink>
       </div>
@@ -27,13 +28,22 @@ import CollectionSmall from "../components/Collection-small.vue";
           <RouterLink class="menu-item" to="/erhvervserfaring"
             >Erhvervserfaring</RouterLink
           >
-          <RouterLink class="menu-item" to="/kundskaber">IT-Kundskaber</RouterLink>
+          <RouterLink class="menu-item" to="/projekter">Projekter</RouterLink>
+          <RouterLink class="menu-item" to="/kundskaber"
+            >IT-Kundskaber</RouterLink
+          >
           <RouterLink class="menu-item" to="/uddannelse">Uddannelse</RouterLink>
           <RouterLink class="menu-item" to="/kontakt">Kontakt</RouterLink>
         </nav>
       </div>
     </div>
-    <Collection img_src="images/wave.png">
+    <Collection
+      img_src="images/wave.png"
+      data-aos="zoom-in"
+      data-aos-delay="250"
+      data-aos-once="true"
+      data-aos-duration="1000"
+    >
       <template v-slot:collection-header-slot>
         <p>Om mig</p>
       </template>
@@ -46,12 +56,15 @@ import CollectionSmall from "../components/Collection-small.vue";
         </p>
         <p>
           Jeg er desuden at finde på
-          <a class="link" target="_blank" href="https://github.com/oliv1115"
+          <a
+            class="link-text"
+            target="_blank"
+            href="https://github.com/oliv1115"
             >GitHub</a
           >
           og
           <a
-            class="link"
+            class="link-text"
             target="_blank"
             href="https://www.linkedin.com/in/oliver-eierstrand-3032091a3/"
             >LinkedIn</a
@@ -60,14 +73,26 @@ import CollectionSmall from "../components/Collection-small.vue";
       </template>
     </Collection>
 
-    <div class="section-header">
+    <div
+      class="section-header margin-right"
+      data-aos="fade-right"
+      data-aos-delay="550"
+      data-aos-once="true"
+      data-aos-duration="1000"
+    >
       <h5 style="font-weight: 600">Stadig nysgerrig?</h5>
       <h3>Okay, her er lidt mere information om mig:</h3>
     </div>
 
-    <div class="container nopadding">
+    <div
+      class="nopadding"
+      data-aos="fade-up"
+      data-aos-delay="750"
+      data-aos-once="true"
+      data-aos-duration="1000"
+    >
       <div class="row">
-        <div class="col">
+        <div class="col-12 col-md-6 col-mobile">
           <CollectionSmall img_src="/images/curious.png">
             <template v-slot:collection-header-slot>
               <p>Nysgerrig</p>
@@ -77,13 +102,13 @@ import CollectionSmall from "../components/Collection-small.vue";
                 Jeg er nysgerrig af natur og opsøger altid ny viden. Jeg har en
                 trang til at undersøge ting nærmere og dette hjælper mig til at
                 forstå mig selv og andre bedre. I form af min nysgerrighed har
-                jeg nemmere ved at tilegne mig ny viden, hvilket har givet mig
-                en fordel under min uddannelse samt i mine praktikophold.
+                jeg nemt ved at tilegne mig ny viden, hvilket har givet mig en
+                fordel under min uddannelse samt i mine praktikophold.
               </p>
             </template>
           </CollectionSmall>
         </div>
-        <div class="col">
+        <div class="col-12 col-md-6 col-mobile">
           <CollectionSmall img_src="/images/magnifying.png">
             <template v-slot:collection-header-slot>
               <p>Detaljeorienteret</p>
@@ -93,21 +118,16 @@ import CollectionSmall from "../components/Collection-small.vue";
                 Jeg har sans for detaljer og er typen, der ikke kan lade være
                 med at tjekke mit arbejde igennem en ekstra gang.
                 <br />Jeg gør en dyd ud af at sørge for, at det jeg laver er
-                godt og grundigt tjekket igennem, og kan først slappe af, når
-                jeg ved, at det jeg leverer, er ordenligt.
+                godt og grundigt tjekket igennem, og jeg kan først slappe af,
+                når jeg ved, at det jeg leverer, er ordenligt.
               </p>
             </template>
           </CollectionSmall>
         </div>
       </div>
 
-      <!-- <div class="read-more" >
-        <h5 class="read-more-text" style="font-weight: 600">Fortsættes hvis du scroller..</h5>
-        <img class="center" width="75" src="https://cdn-icons-png.flaticon.com/512/545/545678.png">
-      </div> -->
-
       <div class="row">
-        <div class="col">
+        <div class="col-12 col-md-6 col-mobile">
           <CollectionSmall img_src="/images/graduation.png">
             <template v-slot:collection-header-slot>
               <p>Nyuddannet</p>
@@ -118,13 +138,13 @@ import CollectionSmall from "../components/Collection-small.vue";
                 men det ændrer ikke på det faktum, at jeg har et brændende ønske
                 om at blive en god udvikler. Jeg vil udvide mine kompetencer
                 indenfor Frontend- og Webudvikling og jeg ønsker at blive en del
-                af en virksomhed, hvori der er plads til at jeg kan udfolde og
+                af en virksomhed, hvor der er plads til, at jeg kan udfolde og
                 udvikle mig både fagligt og personligt.
               </p>
             </template>
           </CollectionSmall>
         </div>
-        <div class="col">
+        <div class="col-12 col-md-6 col-mobile">
           <CollectionSmall img_src="/images/computer.png">
             <template v-slot:collection-header-slot>
               <p>Gode karakterer</p>
@@ -144,7 +164,11 @@ import CollectionSmall from "../components/Collection-small.vue";
       </div>
 
       <div class="row">
-        <div data-aos="fade-right" class="col">
+        <div
+          data-aos="fade-right"
+          data-aos-once="true"
+          class="col-12 col-md-6 col-mobile"
+        >
           <CollectionSmall img_src="/images/attention-to-detail.png">
             <template v-slot:collection-header-slot>
               <p>Udadvendt</p>
@@ -161,19 +185,23 @@ import CollectionSmall from "../components/Collection-small.vue";
             </template>
           </CollectionSmall>
         </div>
-        <div data-aos="fade-left" class="col">
+        <div
+          data-aos="fade-left"
+          data-aos-once="true"
+          class="col-12 col-md-6 col-mobile"
+        >
           <CollectionSmall img_src="/images/running.png">
             <template v-slot:collection-header-slot>
               <p>Initiativrig</p>
             </template>
             <template v-slot:collection-text-slot>
               <p class="collection-text">
-                Jeg er en person, der alt Jeg er initiativrig og får altid en
-                masse ideer. Min nysgerrighed hjælper mig til at udfordre og
-                udforske, det der endnu ikke er tænkt på, og jeg trives i et
-                miljø, hvor der er højt til loftet og plads til nye initiativer
-                og alle mine idéer. Derudover er jeg god til at lytte til andres
-                ideer og komme med feedback.
+                Jeg er initiativrig og får altid en masse ideer. Min
+                nysgerrighed hjælper mig til at udfordre og udforske, det der
+                endnu ikke er tænkt på, og jeg trives i et miljø, hvor der er
+                højt til loftet og plads til nye initiativer og alle mine idéer.
+                Derudover er jeg god til at lytte til andres ideer og komme med
+                feedback.
               </p>
             </template>
           </CollectionSmall>
@@ -183,10 +211,13 @@ import CollectionSmall from "../components/Collection-small.vue";
 
     <div class="row" style="text-align: center">
       <div class="col">
-        <a href="#scrollTo"
-          ><button class="btn btn-light" style="border-radius: 20px;">
-            <h5 class="nopadding" style="font-weight: 600">
-              Tilbage til toppen
+        <button
+          onclick="window.scrollTo({top: 0, behavior: 'smooth'});"
+          class="btn btn-light"
+          style="border-radius: 20px"
+        >
+          <h5 class="nopadding" style="font-weight: 600">
+            Tilbage til toppen
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="40"
@@ -200,9 +231,8 @@ import CollectionSmall from "../components/Collection-small.vue";
                 d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"
               />
             </svg>
-            </h5>
-          </button>
-        </a>
+          </h5>
+        </button>
       </div>
     </div>
   </div>
@@ -233,7 +263,6 @@ a {
 
 a:hover {
   text-decoration: none;
-  /* font-weight: 800 !important; */
   color: #518882 !important;
   cursor: pointer;
 }
@@ -264,14 +293,8 @@ a:hover {
   margin-top: 50px;
 }
 
-.link {
-  font-weight: bold;
-  /* display: inline-block; */
-  /* float: left; */
-}
-
 .section-header {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .collection-text {
@@ -296,11 +319,19 @@ a:hover {
 .btn-light {
   color: #212529 !important;
   padding: 15px 15px;
-  /* padding-top: 20px;
-  padding-bottom: 20px; */
 }
 
 .active {
   color: #518882 !important;
+}
+
+@media screen and (max-width: 626px) {
+  .col-mobile {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .margin-right {
+    margin-left: -15px !important
+  }
 }
 </style>

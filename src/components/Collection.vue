@@ -1,9 +1,7 @@
 <template>
-  <div class="collection">
+  <div class="collection col-mobile-header">
     <div class="collection-header">
-      <img class="collection-img"
-      :src="img_src"
-      />
+      <img class="collection-img" :src="img_src" alt="Collection image" />
     </div>
     <h1>
       <slot name="collection-header-slot"></slot>
@@ -18,8 +16,8 @@
 export default {
   props: {
     img_src: String,
-  }
-}
+  },
+};
 </script>
 
 <style>
@@ -28,7 +26,6 @@ export default {
   border-radius: 20px;
   background-color: rgb(245, 245, 246);
   margin-bottom: 60px;
-  /* box-shadow: 0 10px 40px 0 rgb(0 0 0 / 15%); */
 }
 
 .collection-header {
@@ -43,7 +40,6 @@ export default {
   max-width: 50px;
   max-height: 50px;
   vertical-align: middle;
-  /* display: inline-block; */
 }
 
 .collection-header h1 {
@@ -55,5 +51,12 @@ export default {
 .collection-text {
   font-size: 18px;
   line-height: 175%;
+}
+
+@media screen and (max-width: 626px) {
+  .col-mobile-header {
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+  }
 }
 </style>

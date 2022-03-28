@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeAndAboutView from "../views/HomeAndAboutView.vue";
 import Erhverserfaring from "../views/Erhvervserfaring.vue";
 import Kundskaber from "../views/Kundskaber.vue";
+import Projekter from "../views/Projekter.vue";
 import Uddannelse from "../views/Uddannelse.vue";
 import Kontakt from "../views/Kontakt.vue";
 
@@ -22,6 +23,11 @@ const router = createRouter({
       path: "/Kundskaber",
       name: "kundskaber",
       component: Kundskaber,
+    },
+    {
+      path: "/Projekter",
+      name: "projekter",
+      component: Projekter,
     },
     {
       path: "/Uddannelse",

@@ -2,22 +2,19 @@
 import { RouterLink, RouterView } from "vue-router";
 </script>
 
-<script>
-</script>
+<script></script>
 
 <template>
   <div class="header">
     <div class="header-picture">
-      
-        <img
-          width="100"
-          height="100"
-          class="header-img"
-          src="../assets/images/CV-billede-farve.png"
-        />
-      
+      <img
+        width="100"
+        height="100"
+        class="header-img"
+        src="../assets/images/CV-billede-farve.png"
+        alt="Header image"
+      />
     </div>
-
     <div class="header-menu">
       <h2 class="logo">Oliver Eierstrand</h2>
       <nav id="navbar" class="menu">
@@ -33,7 +30,7 @@ import { RouterLink, RouterView } from "vue-router";
 <style>
 .header {
   display: flex;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .header-picture {
@@ -59,7 +56,6 @@ import { RouterLink, RouterView } from "vue-router";
 .logo {
   color: #191a1d;
   display: inline-block;
-  /* font-size: 28px; */
   font-size: 1.75rem;
   line-height: 100%;
   font-weight: 600;
@@ -68,7 +64,6 @@ import { RouterLink, RouterView } from "vue-router";
 }
 
 .logo::after {
-  /* margin-top: 12.337555519%; */
   margin-top: 8%;
   max-width: 30%;
   background: #518882;
@@ -76,7 +71,6 @@ import { RouterLink, RouterView } from "vue-router";
   content: "";
   display: block;
   height: 6px;
-  /* max-width: 30px; */
   width: 100%;
 }
 

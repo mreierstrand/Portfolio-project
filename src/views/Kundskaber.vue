@@ -34,7 +34,6 @@ export default {
           id: "7",
           name: "TypeScript",
         },
-        
       ],
       kendskab: [
         {
@@ -48,7 +47,8 @@ export default {
         {
           id: "3",
           name: "Jupyter",
-        },{
+        },
+        {
           id: "4",
           name: "C#",
         },
@@ -106,6 +106,7 @@ export default {
             height="100"
             class="header-img"
             src="../assets/images/CV-billede-farve.png"
+            alt="CV profil billede"
           />
         </RouterLink>
       </div>
@@ -119,6 +120,7 @@ export default {
           <RouterLink class="menu-item" to="/erhvervserfaring"
             >Erhvervserfaring</RouterLink
           >
+          <RouterLink class="menu-item" to="/projekter">Projekter</RouterLink>
           <RouterLink class="menu-item active" to="/kundskaber"
             >IT-Kundskaber</RouterLink
           >
@@ -128,30 +130,27 @@ export default {
       </div>
     </div>
 
-    <div class="education-header">
+    <div class="domain-header mobile">
       <img
-        class="education-header-img"
+        class="domain-header-img"
         align="left"
         width="75"
         height="75"
         src="images/computer-small.png"
+        alt="Computer billede"
       />
-      <h5 style="font-weight: 600">IT-Kundskaber</h5>
+      <h5 class="domain-header-mobile" style="font-weight: 600">IT-Kundskaber</h5>
       <h3>Oversigt over mine IT-kundskaber:</h3>
     </div>
 
     <div class="row">
-      <!-- <div class="col">
-        <ul class="list-group">
-          <li class="list-group-item" v-for="item in erfaring" :key="item.id">
-            <div class="education-header">
-              <h3>{{ item.name }}</h3>
-            </div>
-
-          </li>
-        </ul>
-      </div> -->
-      <div class="col">
+      <div
+        class="col-12 col-md-4 mobile"
+        data-aos="zoom-in"
+        data-aos-delay="250"
+        data-aos-once="true"
+        data-aos-duration="750"
+      >
         <div class="collection">
           <h3 class="collection-header-col">Erfaring med</h3>
           <div v-for="item in erfaring" :key="item.id">
@@ -160,7 +159,13 @@ export default {
         </div>
       </div>
 
-      <div class="col">
+      <div
+        class="col-12 col-md-4 mobile"
+        data-aos="zoom-in"
+        data-aos-delay="450"
+        data-aos-once="true"
+        data-aos-duration="750"
+      >
         <div class="collection">
           <h3 class="collection-header-col">Med arbejde i</h3>
           <div v-for="item in arbejde" :key="item.id">
@@ -168,7 +173,14 @@ export default {
           </div>
         </div>
       </div>
-      <div class="col">
+
+      <div
+        class="col-12 col-md-4 mobile"
+        data-aos="zoom-in"
+        data-aos-delay="650"
+        data-aos-once="true"
+        data-aos-duration="750"
+      >
         <div class="collection">
           <h3 class="collection-header-col">Kendskab til</h3>
           <div v-for="item in kendskab" :key="item.id">
@@ -184,7 +196,6 @@ export default {
 .logo {
   color: #191a1d;
   display: inline-block;
-  /* font-size: 28px; */
   font-size: 1.75rem;
   line-height: 100%;
   font-weight: 600;
@@ -216,5 +227,15 @@ export default {
   display: block;
   height: 6px;
   width: 100%;
+}
+
+@media screen and (max-width: 626px) {
+  .mobile {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .domain-header-mobile {
+    margin-top: 80px;
+  }
 }
 </style>

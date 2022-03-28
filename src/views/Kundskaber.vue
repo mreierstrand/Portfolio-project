@@ -97,7 +97,7 @@ export default {
 </script>
 
 <template>
-  <div class="wrap">
+  <div class="wrap mobile-wrapper">
     <div class="header">
       <div class="header-picture">
         <RouterLink to="/">
@@ -236,6 +236,9 @@ export default {
   }
   .domain-header-mobile {
     margin-top: 80px;
+  }
+  .mobile-wrapper {
+    padding-top: 20px !important;
   }
 }
 </style>

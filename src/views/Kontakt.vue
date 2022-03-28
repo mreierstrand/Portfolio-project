@@ -1,5 +1,5 @@
 <template>
-  <div class="wrap">
+  <div class="wrap mobile-wrapper">
     <div class="header">
       <div class="header-picture">
         <RouterLink to="/">
@@ -201,6 +201,13 @@ p {
   margin-bottom: 20px;
 }
 
+.wrap {
+  max-width: 1024px;
+  padding: 30px;
+  padding-top: 80px;
+  width: 100%;
+}
+
 @media screen and (max-width: 626px) {
   .mobile {
     padding-left: 0 !important;
@@ -214,6 +221,9 @@ p {
   }
   .domain-header-mobile {
     margin-top: 80px;
+  }
+  .mobile-wrapper {
+    padding-top: 20px !important;
   }
 }
 </style>

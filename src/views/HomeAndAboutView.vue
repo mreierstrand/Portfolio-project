@@ -5,7 +5,7 @@ import CollectionSmall from "../components/Collection-small.vue";
 
 <template>
   <div id="scrollTo"></div>
-  <div class="wrap">
+  <div class="wrap mobile-wrapper">
     <div class="header">
       <div class="header-picture">
         <RouterLink to="/">
@@ -275,7 +275,6 @@ a:hover {
 
 .wrap {
   max-width: 1024px;
-  padding: 30px;
   width: 100%;
 }
 
@@ -289,9 +288,9 @@ a:hover {
   text-transform: uppercase;
 }
 
-.header {
+/* .header {
   margin-top: 50px;
-}
+} */
 
 .section-header {
   margin-bottom: 40px;
@@ -332,6 +331,9 @@ a:hover {
   }
   .margin-right {
     margin-left: -15px !important
+  }
+  .mobile-wrapper {
+    padding-top: 20px !important;
   }
 }
 </style>

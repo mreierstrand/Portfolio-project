@@ -3,7 +3,7 @@ import CollectionBig from "./../components/Collection-big.vue";
 </script>
 
 <template>
-  <div class="wrap">
+  <div class="wrap mobile-wrapper">
     <div class="header">
       <div class="header-picture">
         <RouterLink to="/">
@@ -269,6 +269,9 @@ import CollectionBig from "./../components/Collection-big.vue";
   }
   .domain-header-mobile {
     margin-top: 80px;
+  }
+  .mobile-wrapper {
+    padding-top: 20px !important;
   }
 }
 </style>

@@ -38,7 +38,7 @@ import CollectionSmall from "../components/Collection-small.vue";
       </div>
     </div>
     <Collection
-      img_src="images/wave.png"
+      img_src="/images/wave.png"
       data-aos="zoom-in"
       data-aos-delay="250"
       data-aos-once="true"

@@ -177,7 +177,7 @@ import CollectionBig from "./../components/Collection-big.vue";
       <template v-slot:collection-header-slot>
         <div class="row">
           <div style="max-width: 75px" class="col">
-            <img class="avatar" src="/images/herstedoester.png"
+            <img class="avatar" src="https://herstedosterskole.aula.dk/sites/herstedosterskole.aula.dk/files/styles/indholdsbillede_380_x_285_/public/arkiv/Billeder/Artikler/Forside/Logo%20%281%29.png?itok=xH7tnXEk"
             alt="Avatar" />
           </div>
           <div class="col nopadding">

@@ -136,7 +136,7 @@ export default {
         align="left"
         width="75"
         height="75"
-        src="images/computer-small.png"
+        src="/images/computer-small.png"
         alt="Computer billede"
       />
       <h5 class="domain-header-mobile" style="font-weight: 600">IT-Kundskaber</h5>

@@ -55,7 +55,7 @@
         data-aos-duration="1000"
       >
         <p style="font-size: 20px; line-height; 24px;">
-          Så kan jeg fanges på sociale medier, via mail eller på <a href="tel:+4540475805"><b>+45 40475805</b></a>.
+          Så kan jeg fanges på sociale medier, via mail eller på <a href="tel:+4540475805"><b>+4540475805</b></a>.
         </p>
         <div class="col nopadding socials">
           <a

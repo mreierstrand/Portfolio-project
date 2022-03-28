@@ -147,7 +147,7 @@ export default {
       <div
         class="col-12 col-md-4 mobile"
         data-aos="zoom-in"
-        data-aos-delay="250"
+        data-aos-delay="50"
         data-aos-once="true"
         data-aos-duration="750"
       >
@@ -162,7 +162,7 @@ export default {
       <div
         class="col-12 col-md-4 mobile"
         data-aos="zoom-in"
-        data-aos-delay="450"
+        data-aos-delay="150"
         data-aos-once="true"
         data-aos-duration="750"
       >
@@ -177,7 +177,7 @@ export default {
       <div
         class="col-12 col-md-4 mobile"
         data-aos="zoom-in"
-        data-aos-delay="650"
+        data-aos-delay="250"
         data-aos-once="true"
         data-aos-duration="750"
       >

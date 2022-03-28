@@ -49,7 +49,7 @@ import CollectionBig from "./../components/Collection-big.vue";
     </div>
     <CollectionBig
       data-aos="zoom-in"
-      data-aos-delay="350"
+      data-aos-delay="50"
       data-aos-once="true"
       data-aos-duration="750"
     >
@@ -116,7 +116,7 @@ import CollectionBig from "./../components/Collection-big.vue";
 
     <CollectionBig
       data-aos="zoom-in"
-      data-aos-delay="550"
+      data-aos-delay="100"
       data-aos-once="true"
       data-aos-duration="750"
     >
@@ -170,7 +170,7 @@ import CollectionBig from "./../components/Collection-big.vue";
 
     <CollectionBig
       data-aos="zoom-in"
-      data-aos-delay="50"
+      data-aos-delay="150"
       data-aos-once="true"
       data-aos-duration="750"
     >

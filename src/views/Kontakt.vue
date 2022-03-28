@@ -50,7 +50,7 @@
     <div class="container mobile">
       <div
         data-aos="fade-left"
-        data-aos-delay="250"
+        data-aos-delay="5"
         data-aos-once="true"
         data-aos-duration="1000"
       >
@@ -87,7 +87,7 @@
       </div>
       <div
         data-aos="fade-up"
-        data-aos-delay="450"
+        data-aos-delay="150"
         data-aos-once="true"
         data-aos-duration="1250"
       >

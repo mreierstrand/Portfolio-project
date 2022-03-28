@@ -57,7 +57,7 @@ import CollectionBig from "../components/Collection-big.vue";
         <CollectionBig
           style="background-color: #3d464a; !important; color: white !important;"
           data-aos="zoom-in"
-          data-aos-delay="250"
+          data-aos-delay="50"
           data-aos-once="true"
           data-aos-duration="750"
         >
@@ -131,7 +131,7 @@ import CollectionBig from "../components/Collection-big.vue";
         <CollectionBig
           style="background-color: #a4de41 !important"
           data-aos="zoom-in"
-          data-aos-delay="450"
+          data-aos-delay="100"
           data-aos-once="true"
           data-aos-duration="750"
         >
@@ -210,7 +210,7 @@ import CollectionBig from "../components/Collection-big.vue";
         <CollectionBig
           style="background-color: #e9f3fd !important"
           data-aos="zoom-in"
-          data-aos-delay="650"
+          data-aos-delay="150"
           data-aos-once="true"
           data-aos-duration="750"
         >
@@ -295,7 +295,7 @@ import CollectionBig from "../components/Collection-big.vue";
           class="last-collection-big"
           style="background-color: #45cb85 !important; margin-bottom: 20;"
           data-aos="zoom-in"
-          data-aos-delay="850"
+          data-aos-delay="200"
           data-aos-once="true"
           data-aos-duration="750"
         >

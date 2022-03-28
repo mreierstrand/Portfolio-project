@@ -40,7 +40,7 @@ import CollectionSmall from "../components/Collection-small.vue";
     <Collection
       img_src="/images/wave.png"
       data-aos="zoom-in"
-      data-aos-delay="250"
+      data-aos-delay="50"
       data-aos-once="true"
       data-aos-duration="1000"
     >
@@ -76,7 +76,7 @@ import CollectionSmall from "../components/Collection-small.vue";
     <div
       class="section-header margin-right"
       data-aos="fade-right"
-      data-aos-delay="550"
+      data-aos-delay="100"
       data-aos-once="true"
       data-aos-duration="1000"
     >
@@ -87,7 +87,7 @@ import CollectionSmall from "../components/Collection-small.vue";
     <div
       class="nopadding"
       data-aos="fade-up"
-      data-aos-delay="750"
+      data-aos-delay="150"
       data-aos-once="true"
       data-aos-duration="1000"
     >

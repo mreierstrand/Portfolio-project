@@ -12,7 +12,7 @@ import CollectionBig from "./../components/Collection-big.vue";
             height="100"
             class="header-img"
             src="../assets/images/CV-billede-farve.png"
-            alt="CV profil billede"
+            alt="Oliver Eierstrand"
           />
         </RouterLink>
       </div>

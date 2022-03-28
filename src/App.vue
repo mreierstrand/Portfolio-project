@@ -5,8 +5,6 @@ import Portfolio from "./components/Portfolio.vue";
 
 <template>
     <RouterView />
-  <!-- <div class="wrap">
-  </div> -->
 </template>
 
 <style>

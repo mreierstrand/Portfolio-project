@@ -101,7 +101,7 @@ import CollectionBig from "../components/Collection-big.vue";
             />
           </div>
           <div class="col nopadding">
-            <p style="padding: 8.25px">Studentereksamen</p>
+            <p style="padding: 8.25px">Studenter eksamen</p>
           </div>
         </div>
       </template>

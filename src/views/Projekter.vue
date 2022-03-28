@@ -45,7 +45,7 @@ import CollectionBig from "../components/Collection-big.vue";
         align="left"
         width="75"
         height="75"
-        src="images/desktop.png"
+        src="/images/desktop.png"
         alt="Desktop computer"
       />
       <h5 class="domain-header-mobile" style="font-weight: 600">Projekter</h5>

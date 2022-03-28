@@ -40,7 +40,7 @@
         align="left"
         width="75"
         height="75"
-        src="images/contact.png"
+        src="/images/contact.png"
         alt="Kontakt billede"
       />
       <h5 class="domain-header-mobile" style="font-weight: 600">Kontakt mig</h5>

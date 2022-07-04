@@ -126,7 +126,7 @@ import CollectionBig from "./../components/Collection-big.vue";
             <img
               class="avatar"
               alt="Avatar"
-              src="https://media-exp1.licdn.com/dms/image/C4D0BAQEBmpCOcVoj5g/company-logo_200_200/0/1633436611809?e=1656547200&v=beta&t=fMologgEyWk6jXMYNXTN71YSJce6ha9cI0v4dySJAfs"
+              src="https://media-exp2.licdn.com/dms/image/C4D0BAQEBmpCOcVoj5g/company-logo_200_200/0/1633436611809?e=1665014400&v=beta&t=hWzytbielQiulu6Zzgg2Kk8XQWKk8t6Md6Mn2r6tvRM"
             />
           </div>
           <div class="col nopadding">

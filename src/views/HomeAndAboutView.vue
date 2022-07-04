@@ -3,6 +3,7 @@ import Collection from "../components/Collection.vue";
 import CollectionSmall from "../components/Collection-small.vue";
 </script>
 
+
 <template>
   <div id="scrollTo"></div>
   <div class="wrap mobile-wrapper">
@@ -10,6 +11,7 @@ import CollectionSmall from "../components/Collection-small.vue";
       <div class="header-picture">
         <RouterLink to="/">
           <img
+            id="image"
             width="100"
             height="100"
             class="header-img"
@@ -74,7 +76,7 @@ import CollectionSmall from "../components/Collection-small.vue";
     </Collection>
 
     <div
-      class="section-header margin-right"
+      class="section-header"
       data-aos="fade-right"
       data-aos-delay="100"
       data-aos-once="true"
@@ -287,10 +289,6 @@ a:hover {
   letter-spacing: 0.0625rem;
   text-transform: uppercase;
 }
-
-/* .header {
-  margin-top: 50px;
-} */
 
 .section-header {
   margin-bottom: 40px;

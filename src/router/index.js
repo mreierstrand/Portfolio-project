@@ -5,6 +5,7 @@ import Kundskaber from "../views/Kundskaber.vue";
 import Projekter from "../views/Projekter.vue";
 import Uddannelse from "../views/Uddannelse.vue";
 import Kontakt from "../views/Kontakt.vue";
+import Thomas from "../views/Thomas.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -38,6 +39,11 @@ const router = createRouter({
       path: "/Kontakt",
       name: "kontakt",
       component: Kontakt,
+    },
+    {
+      path: "/Thomas",
+      name: "thomas",
+      component: Thomas,
     },
   ],
 });

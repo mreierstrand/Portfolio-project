@@ -5,6 +5,7 @@ import Kundskaber from "../views/Kundskaber.vue";
 import Projekter from "../views/Projekter.vue";
 import Uddannelse from "../views/Uddannelse.vue";
 import Kontakt from "../views/Kontakt.vue";
+import Emilie from "../views/Emilie.vue"
 import Thomas from "../views/Thomas.vue";
 
 const router = createRouter({
@@ -39,6 +40,11 @@ const router = createRouter({
       path: "/Kontakt",
       name: "kontakt",
       component: Kontakt,
+    },
+    {
+      path: "/Emilie",
+      name: "emilie",
+      component: Emilie,
     },
     {
       path: "/Thomas",

@@ -64,7 +64,7 @@ import CollectionBig from "./../components/Collection-big.vue";
           </div>
           <div class="col nopadding">
             <p style="padding: 8.25px">
-              Frontend-virksomhedspraktik hos Lasso X
+              Frontend virksomhedspraktik hos Lasso X
             </p>
           </div>
         </div>

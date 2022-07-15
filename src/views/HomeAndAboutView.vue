@@ -166,11 +166,6 @@ import CollectionSmall from "../components/Collection-small.vue";
       </div>
 
       <div class="row">
-        <div
-          data-aos="fade-right"
-          data-aos-once="true"
-          class="col-12 col-md-6 col-mobile"
-        >
           <CollectionSmall img_src="/images/attention-to-detail.png">
             <template v-slot:collection-header-slot>
               <p>Udadvendt</p>
@@ -186,12 +181,7 @@ import CollectionSmall from "../components/Collection-small.vue";
               </p>
             </template>
           </CollectionSmall>
-        </div>
-        <div
-          data-aos="fade-left"
-          data-aos-once="true"
-          class="col-12 col-md-6 col-mobile"
-        >
+        
           <CollectionSmall img_src="/images/running.png">
             <template v-slot:collection-header-slot>
               <p>Initiativrig</p>
@@ -207,7 +197,6 @@ import CollectionSmall from "../components/Collection-small.vue";
               </p>
             </template>
           </CollectionSmall>
-        </div>
       </div>
     </div>
 
@@ -249,6 +238,9 @@ body {
   color: black !important;
   font-family: Rubik, sans-serif !important;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
 }
 
 img {

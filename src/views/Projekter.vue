@@ -193,7 +193,7 @@ import CollectionBig from "../components/Collection-big.vue";
                 >Se live</a
               >
               <a
-                href="https://github.com/oliv1115/5sem-eksamensprojekt"
+                href="https://github.com/mreierstrand/5sem-eksamensprojekt"
                 target="_blank"
                 class="btn btn-light text-white"
                 style="color: #181818 !important"

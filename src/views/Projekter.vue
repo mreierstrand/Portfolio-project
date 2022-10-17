@@ -1,7 +1,7 @@
 <script setup>
-import Collection from "../components/Collection.vue";
-import CollectionProject from "../components/Collection-project.vue";
-import CollectionBig from "../components/Collection-big.vue";
+import Collection from '../components/Collection.vue';
+import CollectionProject from '../components/Collection-project.vue';
+import CollectionBig from '../components/Collection-big.vue';
 </script>
 
 <template>
@@ -66,7 +66,7 @@ import CollectionBig from "../components/Collection-big.vue";
               <div style="max-width: 75px" class="col">
                 <img
                   class="avatar"
-                  src="https://lassox.com/_nuxt/b21ca81670a19437d0449cda93509f0e.svg"
+                  src="https://media-exp1.licdn.com/dms/image/C4D0BAQGEWOZha3Xs-A/company-logo_200_200/0/1661521025455?e=1674086400&v=beta&t=Kdr7Qi1MJ39Mc-Wk2OB0QrwML8GpHnI3ghM2MbvX4Fk"
                   alt="Lasso X logo"
                 />
               </div>
@@ -293,7 +293,7 @@ import CollectionBig from "../components/Collection-big.vue";
       <div class="col">
         <CollectionBig
           class="last-collection-big"
-          style="background-color: #45cb85 !important; margin-bottom: 20;"
+          style="background-color: #45cb85 !important; margin-bottom: 20"
           data-aos="zoom-in"
           data-aos-delay="200"
           data-aos-once="true"
@@ -365,10 +365,7 @@ import CollectionBig from "../components/Collection-big.vue";
         </CollectionBig>
       </div>
     </div>
-    <div
-      class="row button-up"
-      style="text-align: center; display: block;"
-    >
+    <div class="row button-up" style="text-align: center; display: block">
       <div class="col">
         <button
           onclick="window.scrollTo({top: 0, behavior: 'smooth'});"

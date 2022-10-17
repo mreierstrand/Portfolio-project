@@ -1,5 +1,5 @@
 <script setup>
-import CollectionBig from "./../components/Collection-big.vue";
+import CollectionBig from './../components/Collection-big.vue';
 </script>
 
 <template>
@@ -44,7 +44,9 @@ import CollectionBig from "./../components/Collection-big.vue";
         src="/images/work-experience.png"
         alt="CV profil billede"
       />
-      <h5 class="domain-header-mobile" style="font-weight: 600">Erhvervserfaring</h5>
+      <h5 class="domain-header-mobile" style="font-weight: 600">
+        Erhvervserfaring
+      </h5>
       <h3>Information om min erhvervserfaring:</h3>
     </div>
     <CollectionBig
@@ -58,7 +60,7 @@ import CollectionBig from "./../components/Collection-big.vue";
           <div style="max-width: 75px" class="col">
             <img
               class="avatar"
-              src="https://lassox.com/_nuxt/b21ca81670a19437d0449cda93509f0e.svg"
+              src="https://media-exp1.licdn.com/dms/image/C4D0BAQGEWOZha3Xs-A/company-logo_200_200/0/1661521025455?e=1674086400&v=beta&t=Kdr7Qi1MJ39Mc-Wk2OB0QrwML8GpHnI3ghM2MbvX4Fk"
               alt="Avatar"
             />
           </div>
@@ -126,7 +128,7 @@ import CollectionBig from "./../components/Collection-big.vue";
             <img
               class="avatar"
               alt="Avatar"
-              src="https://media-exp2.licdn.com/dms/image/C4D0BAQEBmpCOcVoj5g/company-logo_200_200/0/1633436611809?e=1665014400&v=beta&t=hWzytbielQiulu6Zzgg2Kk8XQWKk8t6Md6Mn2r6tvRM"
+              src="https://media-exp1.licdn.com/dms/image/C4D0BAQEBmpCOcVoj5g/company-logo_200_200/0/1633436611809?e=1674086400&v=beta&t=3rHXXSRzxYBxfAPsVm1T5AXs40cAVt6_rYqFxbwOYR0"
             />
           </div>
           <div class="col nopadding">
@@ -177,8 +179,11 @@ import CollectionBig from "./../components/Collection-big.vue";
       <template v-slot:collection-header-slot>
         <div class="row">
           <div style="max-width: 75px" class="col">
-            <img class="avatar" src="https://herstedosterskole.aula.dk/sites/herstedosterskole.aula.dk/files/styles/indholdsbillede_380_x_285_/public/arkiv/Billeder/Artikler/Forside/Logo%20%281%29.png?itok=xH7tnXEk"
-            alt="Avatar" />
+            <img
+              class="avatar"
+              src="https://herstedosterskole.aula.dk/sites/herstedosterskole.aula.dk/files/styles/indholdsbillede_380_x_285_/public/arkiv/Billeder/Artikler/Forside/Logo%20%281%29.png?itok=xH7tnXEk"
+              alt="Avatar"
+            />
           </div>
           <div class="col nopadding">
             <p style="padding: 8.25px">Lærervikar i almen- og specialklasser</p>

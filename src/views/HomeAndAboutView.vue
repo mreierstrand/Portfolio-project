@@ -1,8 +1,7 @@
 <script setup>
-import Collection from "../components/Collection.vue";
-import CollectionSmall from "../components/Collection-small.vue";
+import Collection from '../components/Collection.vue';
+import CollectionSmall from '../components/Collection-small.vue';
 </script>
-
 
 <template>
   <div id="scrollTo"></div>
@@ -61,7 +60,7 @@ import CollectionSmall from "../components/Collection-small.vue";
           <a
             class="link-text"
             target="_blank"
-            href="https://github.com/oliv1115"
+            href="https://github.com/mreierstrand"
             >GitHub</a
           >
           og
@@ -166,37 +165,36 @@ import CollectionSmall from "../components/Collection-small.vue";
       </div>
 
       <div class="row">
-          <CollectionSmall img_src="/images/attention-to-detail.png">
-            <template v-slot:collection-header-slot>
-              <p>Udadvendt</p>
-            </template>
-            <template v-slot:collection-text-slot>
-              <p class="collection-text">
-                Jeg er udadvendt og meget smilende som person. Jeg holder af den
-                gode kontakt med andre mennesker og trives på tomandshånd og
-                især i grupper.
-                <br />Jeg kan lide at tale om mine ideer og problemer i stedet
-                for at sidde med dem alene. <br />At være udadvendt har sine
-                fordele, og det betyder, at jeg blandt andet er en god lytter.
-              </p>
-            </template>
-          </CollectionSmall>
-        
-          <CollectionSmall img_src="/images/running.png">
-            <template v-slot:collection-header-slot>
-              <p>Initiativrig</p>
-            </template>
-            <template v-slot:collection-text-slot>
-              <p class="collection-text">
-                Jeg er initiativrig og får altid en masse ideer. Min
-                nysgerrighed hjælper mig til at udfordre og udforske, det der
-                endnu ikke er tænkt på, og jeg trives i et miljø, hvor der er
-                højt til loftet og plads til nye initiativer og alle mine idéer.
-                Derudover er jeg god til at lytte til andres ideer og komme med
-                feedback.
-              </p>
-            </template>
-          </CollectionSmall>
+        <CollectionSmall img_src="/images/attention-to-detail.png">
+          <template v-slot:collection-header-slot>
+            <p>Udadvendt</p>
+          </template>
+          <template v-slot:collection-text-slot>
+            <p class="collection-text">
+              Jeg er udadvendt og meget smilende som person. Jeg holder af den
+              gode kontakt med andre mennesker og trives på tomandshånd og især
+              i grupper.
+              <br />Jeg kan lide at tale om mine ideer og problemer i stedet for
+              at sidde med dem alene. <br />At være udadvendt har sine fordele,
+              og det betyder, at jeg blandt andet er en god lytter.
+            </p>
+          </template>
+        </CollectionSmall>
+
+        <CollectionSmall img_src="/images/running.png">
+          <template v-slot:collection-header-slot>
+            <p>Initiativrig</p>
+          </template>
+          <template v-slot:collection-text-slot>
+            <p class="collection-text">
+              Jeg er initiativrig og får altid en masse ideer. Min nysgerrighed
+              hjælper mig til at udfordre og udforske, det der endnu ikke er
+              tænkt på, og jeg trives i et miljø, hvor der er højt til loftet og
+              plads til nye initiativer og alle mine idéer. Derudover er jeg god
+              til at lytte til andres ideer og komme med feedback.
+            </p>
+          </template>
+        </CollectionSmall>
       </div>
     </div>
 
@@ -240,7 +238,6 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
   overflow-y: scroll;
-
 }
 
 img {
@@ -320,7 +317,7 @@ a:hover {
     padding-right: 0 !important;
   }
   .margin-right {
-    margin-left: -15px !important
+    margin-left: -15px !important;
   }
   .mobile-wrapper {
     padding-top: 20px !important;

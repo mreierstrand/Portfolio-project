@@ -67,7 +67,7 @@
 
           <a
             style="margin-right: 50px"
-            href="https://github.com/oliv1115"
+            href="https://github.com/mreierstrand"
             target="_blank"
             ><i class="fab fa-github icon"></i
           ></a>

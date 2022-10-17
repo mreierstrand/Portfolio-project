@@ -21,7 +21,7 @@ import HeaderNav from "./Header-nav.vue";
         </p>
         <p>
           Jeg er desuden at finde på
-          <a class="link" href="https://github.com/oliv1115">GitHub</a> og
+          <a class="link" href="https://github.com/mreierstrand">GitHub</a> og
           <a
             class="link"
             href="https://www.linkedin.com/in/oliver-eierstrand-3032091a3/"

@@ -276,7 +276,7 @@ import CollectionBig from "../components/Collection-big.vue";
                 >Se live</a
               >
               <a
-                href="https://github.com/oliv1115/Portfolio-project"
+                href="https://github.com/mreierstrand/Portfolio-project"
                 target="_blank"
                 class="btn btn-light"
                 style="

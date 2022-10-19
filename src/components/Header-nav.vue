@@ -48,7 +48,7 @@ import { RouterLink, RouterView } from 'vue-router';
 }
 
 .active {
-  color: var(--primary-color) !important;
+  color: #518882 !important;
 }
 
 .logo {
@@ -64,7 +64,7 @@ import { RouterLink, RouterView } from 'vue-router';
 .logo::after {
   margin-top: 8%;
   max-width: 30%;
-  background: var(--primary-color);
+  background: #518882;
   border-radius: 1000px;
   content: '';
   display: block;

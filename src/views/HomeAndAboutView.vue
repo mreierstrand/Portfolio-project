@@ -258,7 +258,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: var(--primary-color) !important;
+  color: #518882 !important;
   cursor: pointer;
   font-weight: bold;
 }
@@ -313,7 +313,7 @@ a:hover {
 }
 
 .active {
-  color: var(--primary-color) !important;
+  color: #518882 !important;
 }
 
 @media screen and (max-width: 626px) {

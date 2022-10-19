@@ -221,7 +221,7 @@ export default {
 .collection-header-col::after {
   margin-top: 8%;
   max-width: 30%;
-  background: var(--primary-color);
+  background: #518882;
   border-radius: 1000px;
   content: "";
   display: block;

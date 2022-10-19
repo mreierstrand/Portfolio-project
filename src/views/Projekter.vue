@@ -411,7 +411,7 @@ import CollectionBig from '../components/Collection-big.vue';
 }
 
 a.btn {
-  color: #518882 !important;
+  color: var(--primary-color) !important;
   padding: 10px 15px;
   margin: 10px;
   width: auto;

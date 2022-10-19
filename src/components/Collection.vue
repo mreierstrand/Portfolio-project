@@ -24,7 +24,7 @@ export default {
 .collection {
   padding: 20px 40px;
   border-radius: 20px;
-  background-color: rgb(245, 245, 246);
+  background-color: var(--secondary-color);
   margin-bottom: 60px;
 }
 

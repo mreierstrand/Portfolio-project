@@ -1,8 +1,6 @@
 <script setup>
-import { RouterLink, RouterView } from "vue-router";
+import { RouterLink, RouterView } from 'vue-router';
 </script>
-
-<script></script>
 
 <template>
   <div class="header">
@@ -50,7 +48,7 @@ import { RouterLink, RouterView } from "vue-router";
 }
 
 .active {
-  color: #518882 !important;
+  color: var(--primary-color) !important;
 }
 
 .logo {
@@ -66,9 +64,9 @@ import { RouterLink, RouterView } from "vue-router";
 .logo::after {
   margin-top: 8%;
   max-width: 30%;
-  background: #518882;
+  background: var(--primary-color);
   border-radius: 1000px;
-  content: "";
+  content: '';
   display: block;
   height: 6px;
   width: 100%;

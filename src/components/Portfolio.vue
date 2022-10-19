@@ -1,7 +1,7 @@
 <script setup>
-import Collection from "./Collection.vue";
-import CollectionSmall from "./Collection-small.vue";
-import HeaderNav from "./Header-nav.vue";
+import Collection from './Collection.vue';
+import CollectionSmall from './Collection-small.vue';
+import HeaderNav from './Header-nav.vue';
 </script>
 
 <template>
@@ -136,7 +136,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #518882 !important;
+  color: var(--primary-color) !important;
   cursor: pointer;
 }
 

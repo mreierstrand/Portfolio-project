@@ -10,7 +10,6 @@ import CollectionSmall from '../components/Collection-small.vue';
       <div class="header-picture">
         <RouterLink to="/">
           <img
-            id="image"
             width="100"
             height="100"
             class="header-img"
@@ -104,7 +103,7 @@ import CollectionSmall from '../components/Collection-small.vue';
                 trang til at undersøge ting nærmere og dette hjælper mig til at
                 forstå mig selv og andre bedre. I form af min nysgerrighed har
                 jeg nemt ved at tilegne mig ny viden, hvilket har givet mig en
-                fordel under min uddannelse samt i mine praktikophold.
+                fordel under min uddannelse, samt i mine praktikophold.
               </p>
             </template>
           </CollectionSmall>
@@ -259,8 +258,9 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #518882 !important;
+  color: var(--primary-color) !important;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .page,
@@ -313,7 +313,7 @@ a:hover {
 }
 
 .active {
-  color: #518882 !important;
+  color: var(--primary-color) !important;
 }
 
 @media screen and (max-width: 626px) {

@@ -1,7 +1,7 @@
 <template>
   <div class="collection">
     <div class="collection-header">
-      <img class="collection-img" :src="img_src" alt="Collection image"/>
+      <img class="collection-img" :src="img_src" alt="Collection image" />
     </div>
     <h3 class="collection-header-text">
       <slot name="collection-header-slot"></slot>
@@ -24,7 +24,7 @@ export default {
 .collection {
   padding-bottom: 20px;
   border-radius: 20px;
-  background-color: rgb(245, 245, 246);
+  background-color: var(--secondary-color);
   margin-bottom: 40px;
   min-height: 350px;
 }

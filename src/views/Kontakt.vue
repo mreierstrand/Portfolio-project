@@ -55,7 +55,9 @@
         data-aos-duration="1000"
       >
         <p style="font-size: 20px; line-height; 24px;">
-          Så kan jeg fanges på sociale medier, via mail eller på <a href="tel:+4540475805"><b>+4540475805</b></a>.
+          Så kan jeg fanges på sociale medier, via mail eller på
+          <a href="tel:+4540475805"><b>+4540475805</b></a
+          >.
         </p>
         <div class="col nopadding socials">
           <a
@@ -204,7 +206,7 @@ p {
 .wrap {
   max-width: 1024px;
   padding: 30px;
-  padding-top: 80px;
+  padding-top: 80px !important;
   width: 100%;
 }
 
@@ -222,8 +224,6 @@ p {
   .domain-header-mobile {
     margin-top: 80px;
   }
-  .mobile-wrapper {
-    padding-top: 20px !important;
-  }
+  
 }
 </style>

@@ -49,6 +49,7 @@ import CollectionBig from './../components/Collection-big.vue';
       </h5>
       <h3>Information om min erhvervserfaring:</h3>
     </div>
+
     <CollectionBig
       data-aos="zoom-in"
       data-aos-delay="50"
@@ -58,11 +59,101 @@ import CollectionBig from './../components/Collection-big.vue';
       <template v-slot:collection-header-slot>
         <div class="row">
           <div style="max-width: 75px" class="col">
-            <img
-              class="avatar"
-              src="https://media-exp1.licdn.com/dms/image/C4D0BAQGEWOZha3Xs-A/company-logo_200_200/0/1661521025455?e=1674086400&v=beta&t=Kdr7Qi1MJ39Mc-Wk2OB0QrwML8GpHnI3ghM2MbvX4Fk"
-              alt="Avatar"
-            />
+            <img class="avatar" src="/images/Magenta.jpg" alt="Avatar" />
+          </div>
+          <div class="col nopadding">
+            <p style="padding: 8.25px">
+              Frontend udvikler hos Magenta ApS
+            </p>
+          </div>
+        </div>
+      </template>
+      <template v-slot:collection-subheader-slot>
+        <p style="font-weight: 600">April 2022 - Januar 2023</p>
+      </template>
+      <template v-slot:collection-text-slot>
+        <p>
+          Jeg blev i april 2022 ansat hos Magenta ApS, i første omgang som nyuddannet junior udvikler. Dog blev min stilling allerede fra start ændret fra at være junior i et oplæringsforløb hos en senior frontend udvikler, til at jeg måtte overtage alle nuværende og fremtidige arbejdsopgaver fra senior frontend udvikleren, da denne opsagde sin stilling kort før jeg tiltrådte hos Magenta ApS. 
+        
+        <br>
+        <br>
+        Fået masser af ros for min håndtering af overtagelsen af alle frontend-relaterede opgaver i hele Magenta Aps.
+        </p>
+
+        <p style="font-weight: bold">Arbejdsopgaver hos Magenta:</p>
+        <ul>
+          <li>
+            Håndtering af, og vejledning om alle frontend-relaterede arbejdsopgaver i Magenta.
+          </li>
+          <li>
+            Stå for udviklingen af et tværgående designsystem til Magentas produkter.
+          </li>
+          <li>
+            Lede en frontend Erfa-gruppe, med henblik på at frontend-vidensdele, forbedre frontend arbejdet på tværs af Magentas projekter, samt sætte retning for frontendarbejdet i de forskellige teams i Magenta.<br>
+            Herunder:
+            <ul>
+              <li>
+                Stå for planlægning, indkaldelse og opfølgning af ugentlige Erfa-møder.
+              </li>
+              <li>
+                Stå for fremtidig implementering af idéer i frontenden på tværs af Magentas projekter.
+              </li>            
+            </ul>
+          </li>
+          <li>
+            Stå for planlægning af, arbejdsfordeling under, og opfølgning på en frontend-workshop, med henblik på at omskrive Magentas største projekt:
+            <a
+              class="link-text"
+              href="https://os2.eu/produkt/os2mo"
+              target="_blank">OS2MO's</a>
+            frontend fra Vue.js til Svelte.
+          </li>
+          <li>
+            Stå i spidsen for udviklingen af en ny Svelte frontend til OS2MO.<br>Herunder:
+            <ul>
+              <li>
+                Brainstorming og udvikling af nyt Design System til OS2MO, inden den nye frontend blev implementeret. Design Systemet indeholder definitioner om blandt andet:
+                <ul>
+                  <li>
+                    Farvepalette, typografi, text styles, spaces, responsive design, accessibility o.a.
+                  </li>
+                </ul>
+                <li>
+                    Udarbejdelse af mockups og prototyper i Figma.
+                  </li>
+              </li>
+              <li>
+                Forbedre UI og UX i OS2MO, for at gøre OS2MO mere brugervenligt og intuitivt.
+              </li>
+            </ul>
+          </li>
+          <li>
+            Stå for alt vedrørende Accessibility in design i Magentas projekter. Herunder vejledning om Accessibility til alle udviklingsteams i Magenta.
+          </li>
+        </ul>
+
+        <p>
+          Hent reference og anbefaling fra Magenta ApS
+          <a
+            class="link-text"
+            href="files/Reference_Magenta.pdf"
+            target="_blank"
+            >her</a
+          >.
+        </p>
+      </template>
+    </CollectionBig>
+
+    <CollectionBig
+      data-aos="zoom-in"
+      data-aos-delay="50"
+      data-aos-once="true"
+      data-aos-duration="750"
+    >
+      <template v-slot:collection-header-slot>
+        <div class="row">
+          <div style="max-width: 75px" class="col">
+            <img class="avatar" src="/images/LassoX.jpg" alt="Avatar" />
           </div>
           <div class="col nopadding">
             <p style="padding: 8.25px">
@@ -125,11 +216,7 @@ import CollectionBig from './../components/Collection-big.vue';
       <template v-slot:collection-header-slot>
         <div class="row">
           <div style="max-width: 75px" class="col">
-            <img
-              class="avatar"
-              alt="Avatar"
-              src="https://media-exp1.licdn.com/dms/image/C4D0BAQEBmpCOcVoj5g/company-logo_200_200/0/1633436611809?e=1674086400&v=beta&t=3rHXXSRzxYBxfAPsVm1T5AXs40cAVt6_rYqFxbwOYR0"
-            />
+            <img class="avatar" alt="Avatar" src="/images/Meew.jpg" />
           </div>
           <div class="col nopadding">
             <p style="padding: 8.25px">Datamatiker praktikophold hos MeeW</p>

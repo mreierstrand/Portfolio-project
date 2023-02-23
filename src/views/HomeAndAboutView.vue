@@ -49,7 +49,7 @@ import CollectionSmall from '../components/Collection-small.vue';
       </template>
       <template v-slot:collection-text-slot>
         <p>
-          Mit navn er Oliver Eierstrand. Jeg er 26 år og bor i
+          Mit navn er Oliver Eierstrand. Jeg er 27 år og bor i
           hovedstadsområdet. Jeg er uddannet Datamatiker på Erhvervsakademi
           Zealand i Roskilde og jeg har en stor interesse for Frontend og
           Web-udvikling.
@@ -68,6 +68,11 @@ import CollectionSmall from '../components/Collection-small.vue';
             target="_blank"
             href="https://www.linkedin.com/in/oliver-eierstrand-3032091a3/"
             >LinkedIn</a
+          >, og mit CV kan ses <a
+            class="link-text"
+            target="_blank"
+            href="files/OliverEierstrandCV.pdf"
+            >her</a
           >.
         </p>
       </template>
@@ -134,7 +139,7 @@ import CollectionSmall from '../components/Collection-small.vue';
             </template>
             <template v-slot:collection-text-slot>
               <p class="collection-text">
-                Jeg ved, at jeg er "grøn" og kommer lige fra endt uddannelse,
+                Jeg ved, at jeg er "grøn" og ikke har så meget erhvervserfaring,
                 men det ændrer ikke på det faktum, at jeg har et brændende ønske
                 om at blive en god udvikler. Jeg vil udvide mine kompetencer
                 indenfor Frontend- og Webudvikling og jeg ønsker at blive en del
@@ -261,6 +266,11 @@ a:hover {
   color: #518882 !important;
   cursor: pointer;
   font-weight: bold;
+}
+
+.link-text {
+  font-weight: bold !important;
+  text-decoration: underline !important;
 }
 
 .page,

@@ -66,7 +66,7 @@ import CollectionBig from '../components/Collection-big.vue';
               <div style="max-width: 75px" class="col">
                 <img
                   class="avatar"
-                  src="https://media-exp1.licdn.com/dms/image/C4D0BAQGEWOZha3Xs-A/company-logo_200_200/0/1661521025455?e=1674086400&v=beta&t=Kdr7Qi1MJ39Mc-Wk2OB0QrwML8GpHnI3ghM2MbvX4Fk"
+                  src="/images/LassoX.jpg"
                   alt="Lasso X logo"
                 />
               </div>
@@ -266,23 +266,10 @@ import CollectionBig from '../components/Collection-big.vue';
             </p>
             <ul class="viewProject">
               <a
-                href="#"
-                target="_blank"
-                class="btn btn-light"
-                style="
-                  color: #181818 !important;
-                  background-color: white !important;
-                "
-                >Se live</a
-              >
-              <a
                 href="https://github.com/mreierstrand/Portfolio-project"
                 target="_blank"
                 class="btn btn-light"
-                style="
-                  color: #181818 !important;
-                  background-color: white !important;
-                "
+                style="color: #181818 !important"
                 >GitHub</a
               >
             </ul>

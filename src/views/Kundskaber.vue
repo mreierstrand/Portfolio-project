@@ -28,41 +28,15 @@ export default {
         },
         {
           id: "6",
-          name: "Ionic",
+          name: "Svelte",
         },
         {
           id: "7",
-          name: "TypeScript",
-        },
-      ],
-      kendskab: [
-        {
-          id: "1",
-          name: "SQL",
+          name: "Mockup- & prototypeudvikling",
         },
         {
-          id: "2",
-          name: "Python",
-        },
-        {
-          id: "3",
-          name: "Jupyter",
-        },
-        {
-          id: "4",
-          name: "C#",
-        },
-        {
-          id: "5",
-          name: "XAML",
-        },
-        {
-          id: "6",
-          name: "React Native",
-        },
-        {
-          id: "7",
-          name: "Java (Android)",
+          id: "8",
+          name: "Udvikling af designmanualer",
         },
       ],
       arbejde: [
@@ -72,23 +46,23 @@ export default {
         },
         {
           id: "2",
-          name: "Visual Studio 2017 og 2019",
+          name: "Docker",
         },
         {
           id: "3",
-          name: "Android Studio",
+          name: "GitHub",
         },
         {
           id: "4",
-          name: "Google Firebase",
+          name: "GitLab",
         },
         {
           id: "5",
-          name: "Microsoft Azure",
+          name: "Google Firebase",
         },
         {
           id: "6",
-          name: "GitHub",
+          name: "Figma",
         },
       ],
     };
@@ -145,7 +119,7 @@ export default {
 
     <div class="row">
       <div
-        class="col-12 col-md-4 mobile"
+        class="col-12 col-md-6 mobile"
         data-aos="zoom-in"
         data-aos-delay="50"
         data-aos-once="true"
@@ -160,7 +134,7 @@ export default {
       </div>
 
       <div
-        class="col-12 col-md-4 mobile"
+        class="col-12 col-md-6 mobile"
         data-aos="zoom-in"
         data-aos-delay="150"
         data-aos-once="true"
@@ -169,21 +143,6 @@ export default {
         <div class="collection">
           <h3 class="collection-header-col">Med arbejde i</h3>
           <div v-for="item in arbejde" :key="item.id">
-            <h5>{{ item.name }}</h5>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="col-12 col-md-4 mobile"
-        data-aos="zoom-in"
-        data-aos-delay="250"
-        data-aos-once="true"
-        data-aos-duration="750"
-      >
-        <div class="collection">
-          <h3 class="collection-header-col">Kendskab til</h3>
-          <div v-for="item in kendskab" :key="item.id">
             <h5>{{ item.name }}</h5>
           </div>
         </div>

@@ -73,13 +73,8 @@ import CollectionBig from './../components/Collection-big.vue';
       </template>
       <template v-slot:collection-text-slot>
         <p>
-          Jeg blev i april 2022 ansat hos Magenta ApS, i første omgang som nyuddannet junior udvikler. Dog blev min stilling allerede fra start ændret fra at være junior i et oplæringsforløb hos en senior frontend udvikler, til at jeg måtte overtage alle nuværende og fremtidige arbejdsopgaver fra senior frontend udvikleren, da denne opsagde sin stilling kort før jeg tiltrådte hos Magenta ApS. 
-        
-        <br>
-        <br>
-        Fået masser af ros for min håndtering af overtagelsen af alle frontend-relaterede opgaver i hele Magenta Aps.
+          Jeg blev i april 2022 ansat hos Magenta ApS, i første omgang som nyuddannet junior udvikler. Dog blev min stilling allerede fra start ændret fra at være junior i et oplæringsforløb hos en senior frontend udvikler, til at jeg måtte overtage alle nuværende og fremtidige arbejdsopgaver fra senior frontend udvikleren, da denne opsagde sin stilling kort før jeg tiltrådte hos Magenta ApS.
         </p>
-
         <p style="font-weight: bold">Arbejdsopgaver hos Magenta:</p>
         <ul>
           <li>

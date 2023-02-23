@@ -216,7 +216,7 @@ import CollectionBig from './../components/Collection-big.vue';
       <template v-slot:collection-header-slot>
         <div class="row">
           <div style="max-width: 75px" class="col">
-            <img class="avatar" alt="Avatar" src="/images/Meew.jpg" />
+            <img class="avatar" alt="Avatar" src="/images/MeeW.jpg" />
           </div>
           <div class="col nopadding">
             <p style="padding: 8.25px">Datamatiker praktikophold hos MeeW</p>

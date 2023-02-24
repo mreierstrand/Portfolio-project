@@ -78,7 +78,7 @@ import CollectionBig from './../components/Collection-big.vue';
         <p style="font-weight: bold">Arbejdsopgaver hos Magenta:</p>
         <ul>
           <li>
-            Håndtering af, og vejledning om alle frontend-relaterede arbejdsopgaver i Magenta.
+            Håndtering af - og vejledning om alle frontend-relaterede arbejdsopgaver i Magenta.
           </li>
           <li>
             Stå for udviklingen af et tværgående designsystem til Magentas produkter.

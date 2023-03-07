@@ -55,7 +55,78 @@ import CollectionBig from '../components/Collection-big.vue';
     <div class="row">
       <div class="col-12 col-lg-6">
         <CollectionBig
-          style="background-color: #3d464a; !important; color: white !important;"
+          style="background-color: #e9f3fd !important"
+          data-aos="zoom-in"
+          data-aos-delay="150"
+          data-aos-once="true"
+          data-aos-duration="750"
+        >
+          <template v-slot:collection-header-slot>
+            <div class="row">
+              <div style="max-width: 75px" class="col">
+                <img
+                  class="avatar"
+                  src="../../src/assets/images/CV-billede-farve.png"
+                  alt="CV profil billede"
+                />
+              </div>
+              <div class="col nopadding">
+                <p style="padding: 8.25px">Portfolio</p>
+              </div>
+            </div>
+          </template>
+          <template v-slot:collection-subheader-slot>
+            <p style="font-weight: 600; line-height: 32px">Web applikation</p>
+          </template>
+          <template v-slot:collection-text-slot>
+            <p>
+              Portfolio udviklet for at have et online CV og for at fremvise min
+              personlige erhvervserfaring og uddannelse samt mine projekter og
+              IT-kundskaber. Mit portfolio giver mig frihed og kreativitet til
+              at fremvise mig selv og hvad jeg kan. Jeg har mulighed for at
+              fremvise min personlighed og kan skille mig ud fra mængden, samt
+              benytte mit online portfolio som vedhæftning til jobansøgninger.
+            </p>
+
+            <p style="font-weight: bold">
+              Techstack i dette projekt:<br />
+              <span
+                class="badge badge-pill mr-2"
+                style="background-color: white"
+                >Vue.js</span
+              >
+              <span
+                class="badge badge-pill mr-2"
+                style="background-color: white"
+                >HTML</span
+              >
+              <span
+                class="badge badge-pill mr-2"
+                style="background-color: white"
+                >CSS</span
+              >
+              <span
+                class="badge badge-pill mr-2"
+                style="background-color: white"
+                >JavaScript</span
+              >
+            </p>
+            <ul class="viewProject">
+              <a
+                href="https://github.com/mreierstrand/Portfolio-project"
+                target="_blank"
+                class="btn btn-light"
+                style="color: #181818 !important"
+                >GitHub</a
+              >
+            </ul>
+          </template>
+        </CollectionBig>
+      </div>
+
+      <div class="col">
+        <CollectionBig
+          style="background-color: #FEB5BB !important;"
           data-aos="zoom-in"
           data-aos-delay="50"
           data-aos-once="true"
@@ -89,7 +160,7 @@ import CollectionBig from '../components/Collection-big.vue';
             <p>
               Arbejdet på Lasso Xs portal indeholdte udarbejdelse af
               forbedringer til allerede eksisterende kode/features, samt
-              tilføjelse af funktionalitet til brug for kunde af portalen.
+              tilføjelse af funktionalitet til brug for kunder af portalen.
             </p>
 
             <p style="font-weight: bold">
@@ -97,7 +168,7 @@ import CollectionBig from '../components/Collection-big.vue';
               <span
                 class="badge badge-pill mr-2"
                 style="background-color: #eee; color: black"
-                >VueJs</span
+                >Vue.js</span
               >
               <span
                 class="badge badge-pill mr-2"
@@ -126,8 +197,10 @@ import CollectionBig from '../components/Collection-big.vue';
           </template>
         </CollectionBig>
       </div>
+    </div>
 
-      <div class="col">
+    <div class="row">
+      <div class="col-12 col-lg-6">
         <CollectionBig
           style="background-color: #a4de41 !important"
           data-aos="zoom-in"
@@ -168,7 +241,7 @@ import CollectionBig from '../components/Collection-big.vue';
             <p style="font-weight: bold">
               Techstack i dette projekt:<br />
               <span class="badge badge-pill mr-2" style="background-color: #eee"
-                >VueJs</span
+                >Vue.js</span
               >
               <span class="badge badge-pill mr-2" style="background-color: #eee"
                 >Ionic</span
@@ -203,79 +276,6 @@ import CollectionBig from '../components/Collection-big.vue';
           </template>
         </CollectionBig>
       </div>
-    </div>
-
-    <div class="row">
-      <div class="col-12 col-lg-6">
-        <CollectionBig
-          style="background-color: #e9f3fd !important"
-          data-aos="zoom-in"
-          data-aos-delay="150"
-          data-aos-once="true"
-          data-aos-duration="750"
-        >
-          <template v-slot:collection-header-slot>
-            <div class="row">
-              <div style="max-width: 75px" class="col">
-                <img
-                  class="avatar"
-                  src="../../src/assets/images/CV-billede-farve.png"
-                  alt="CV profil billede"
-                />
-              </div>
-              <div class="col nopadding">
-                <p style="padding: 8.25px">Portfolio</p>
-              </div>
-            </div>
-          </template>
-          <template v-slot:collection-subheader-slot>
-            <p style="font-weight: 600; line-height: 32px">Web applikation</p>
-          </template>
-          <template v-slot:collection-text-slot>
-            <p>
-              Portfolio udviklet for at have et online CV og for at fremvise min
-              personlige erhvervserfaring og uddannelse samt mine projekter og
-              IT-kundskaber. Mit portfolio giver mig frihed og kreativitet til
-              at fremvise mig selv og hvad jeg kan. Jeg har mulighed for at
-              fremvise min personlighed og kan skille mig ud fra mængden samt
-              benytte mit online portfolio som vedhæftning til jobansøgninger.
-            </p>
-
-            <p style="font-weight: bold">
-              Techstack i dette projekt:<br />
-              <span
-                class="badge badge-pill mr-2"
-                style="background-color: white"
-                >VueJs</span
-              >
-              <span
-                class="badge badge-pill mr-2"
-                style="background-color: white"
-                >HTML</span
-              >
-              <span
-                class="badge badge-pill mr-2"
-                style="background-color: white"
-                >CSS</span
-              >
-              <span
-                class="badge badge-pill mr-2"
-                style="background-color: white"
-                >JavaScript</span
-              >
-            </p>
-            <ul class="viewProject">
-              <a
-                href="https://github.com/mreierstrand/Portfolio-project"
-                target="_blank"
-                class="btn btn-light"
-                style="color: #181818 !important"
-                >GitHub</a
-              >
-            </ul>
-          </template>
-        </CollectionBig>
-      </div>
 
       <div class="col">
         <CollectionBig
@@ -296,12 +296,12 @@ import CollectionBig from '../components/Collection-big.vue';
                 />
               </div>
               <div class="col nopadding">
-                <p style="padding: 8.25px">Let It Grow</p>
+                <p style="padding: 8.25px;">Let It Grow</p>
               </div>
             </div>
           </template>
           <template v-slot:collection-subheader-slot>
-            <p style="font-weight: 600; line-height: 32px">Web applikation</p>
+            <p style="font-weight: 600; line-height: 32px;">Web applikation</p>
           </template>
           <template v-slot:collection-text-slot>
             <p>
@@ -314,7 +314,7 @@ import CollectionBig from '../components/Collection-big.vue';
             <p style="font-weight: bold">
               Techstack i dette projekt:<br />
               <span class="badge badge-pill mr-2" style="background-color: #eee"
-                >VueJs</span
+                >Vue.js</span
               >
               <span class="badge badge-pill mr-2" style="background-color: #eee"
                 >HTML</span
@@ -327,9 +327,6 @@ import CollectionBig from '../components/Collection-big.vue';
               >
               <span class="badge badge-pill mr-2" style="background-color: #eee"
                 >C#</span
-              >
-              <span class="badge badge-pill mr-2" style="background-color: #eee"
-                >Azure</span
               >
             </p>
             <ul class="viewProject">

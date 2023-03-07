@@ -78,7 +78,7 @@ import CollectionBig from './../components/Collection-big.vue';
         <p style="font-weight: bold">Arbejdsopgaver hos Magenta:</p>
         <ul>
           <li>
-            Håndtering af - og vejledning om alle frontend-relaterede arbejdsopgaver i Magenta.
+            Håndtering af alle frontend-relaterede arbejdsopgaver i Magenta, samt vejledning herom til andre udviklere i virksomheden.
           </li>
           <li>
             Stå for udviklingen af et tværgående designsystem til Magentas produkter.
@@ -164,7 +164,7 @@ import CollectionBig from './../components/Collection-big.vue';
         <p>
           Jeg har efter endt uddannelse været i virksomhedspraktik hos Lasso X.
           Dette har jeg været for at erhverve mig yderlig erfaring indenfor
-          frontend-udvikling i HTML, CSS, JavaScript og VueJs. <br /><br />Mine
+          frontend-udvikling i HTML, CSS, JavaScript og Vue.js. <br /><br />Mine
           primære arbejdsopgaver, under virksomhedspraktikken hos Lasso, bestod
           af udarbejdelse af en underside til
           <a class="link-text" href="https://lassox.com/" target="_blank"
@@ -268,7 +268,7 @@ import CollectionBig from './../components/Collection-big.vue';
             />
           </div>
           <div class="col nopadding">
-            <p style="padding: 8.25px">Lærervikar i almen- og specialklasser</p>
+            <p style="padding: 8.25px; line-height: 2.5rem;">Lærervikar i almen- og specialklasser på Herstedøster Skole</p>
           </div>
         </div>
       </template>

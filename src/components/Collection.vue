@@ -55,8 +55,8 @@ export default {
 
 @media screen and (max-width: 626px) {
   .col-mobile-header {
-    margin-left: -15px !important;
-    margin-right: -15px !important;
+    margin-left: -30px !important;
+    margin-right: -30px !important;
   }
 }
 </style>

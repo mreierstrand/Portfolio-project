@@ -20,7 +20,7 @@ export default {
         },
         {
           id: "4",
-          name: "VueJS",
+          name: "Vue.js",
         },
         {
           id: "5",

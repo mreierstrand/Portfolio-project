@@ -67,7 +67,7 @@ import CollectionBig from "../components/Collection-big.vue";
             />
           </div>
           <div class="col nopadding">
-            <p style="padding: 8.25px">Datamatiker uddannelsen</p>
+            <p style="padding: 8.25px">Datamatikeruddannelsen</p>
           </div>
         </div>
       </template>
@@ -101,7 +101,7 @@ import CollectionBig from "../components/Collection-big.vue";
             />
           </div>
           <div class="col nopadding">
-            <p style="padding: 8.25px">Studenter eksamen</p>
+            <p style="padding: 8.25px">Almen studentereksamen</p>
           </div>
         </div>
       </template>

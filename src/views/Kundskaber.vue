@@ -3,74 +3,6 @@ import CollectionSmall from '../components/Collection-small.vue';
 
 export default {
   components: { CollectionSmall },
-  data() {
-    return {
-      erfaring: [
-        {
-          id: '1',
-          name: 'HTML5',
-        },
-        {
-          id: '2',
-          name: 'CSS3',
-        },
-        {
-          id: '3',
-          name: 'JavaScript',
-        },
-        {
-          id: '4',
-          name: 'Vue.js',
-        },
-        {
-          id: '9',
-          name: 'Tailwind CSS',
-        },
-        {
-          id: '5',
-          name: 'Bootstrap',
-        },
-        {
-          id: '6',
-          name: 'Svelte',
-        },
-        {
-          id: '7',
-          name: 'Mockup- & prototypeudvikling',
-        },
-        {
-          id: '8',
-          name: 'Udvikling af designmanualer',
-        },
-      ],
-      arbejde: [
-        {
-          id: '1',
-          name: 'Visual Studio Code',
-        },
-        {
-          id: '2',
-          name: 'Docker',
-        },
-        {
-          id: '3',
-          name: 'GitHub',
-        },
-        {
-          id: '4',
-          name: 'GitLab',
-        },
-        {
-          id: '5',
-          name: 'Google Firebase',
-        },
-        {
-          id: '6',
-          name: 'Figma',
-        },
-      ],
-    };
-  },
 };
 </script>
 
@@ -126,6 +58,7 @@ export default {
     <div
       class="row"
       data-aos="zoom-in"
+      data-aos-anchor-placement="top-center"
       data-aos-delay="50"
       data-aos-once="true"
       data-aos-duration="1000"

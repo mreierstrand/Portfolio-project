@@ -1,5 +1,5 @@
 <script startup>
-import CollectionSmall from "../components/Collection-small.vue";
+import CollectionSmall from '../components/Collection-small.vue';
 
 export default {
   components: { CollectionSmall },
@@ -7,62 +7,66 @@ export default {
     return {
       erfaring: [
         {
-          id: "1",
-          name: "HTML",
+          id: '1',
+          name: 'HTML5',
         },
         {
-          id: "2",
-          name: "CSS",
+          id: '2',
+          name: 'CSS3',
         },
         {
-          id: "3",
-          name: "JavaScript",
+          id: '3',
+          name: 'JavaScript',
         },
         {
-          id: "4",
-          name: "Vue.js",
+          id: '4',
+          name: 'Vue.js',
         },
         {
-          id: "5",
-          name: "Bootstrap",
+          id: '9',
+          name: 'Tailwind CSS',
         },
         {
-          id: "6",
-          name: "Svelte",
+          id: '5',
+          name: 'Bootstrap',
         },
         {
-          id: "7",
-          name: "Mockup- & prototypeudvikling",
+          id: '6',
+          name: 'Svelte',
         },
         {
-          id: "8",
-          name: "Udvikling af designmanualer",
+          id: '7',
+          name: 'Mockup- & prototypeudvikling',
+        },
+        {
+          id: '8',
+          name: 'Udvikling af designmanualer',
         },
       ],
       arbejde: [
         {
-          id: "1",
-          name: "Visual Studio Code",
+          id: '1',
+          name: 'Visual Studio Code',
         },
         {
-          id: "2",
-          name: "Docker",
+          id: '2',
+          name: 'Docker',
         },
         {
-          id: "3",
-          name: "GitHub",
+          id: '3',
+          name: 'GitHub',
         },
         {
-          id: "4",
-          name: "GitLab",
+          id: '4',
+          name: 'GitLab',
         },
         {
-          id: "5",
-          name: "Google Firebase",
+          id: '5',
+          name: 'Google Firebase',
         },
         {
-          id: "6",
-          name: "Figma",
+          id: '6',
+          name: 'Figma',
         },
       ],
     };
@@ -113,45 +117,135 @@ export default {
         src="/images/computer-small.png"
         alt="Computer billede"
       />
-      <h5 class="domain-header-mobile" style="font-weight: 600">IT-Kundskaber</h5>
+      <h5 class="domain-header-mobile" style="font-weight: 600">
+        IT-Kundskaber
+      </h5>
       <h3>Oversigt over mine IT-kundskaber:</h3>
     </div>
 
-    <div class="row">
-      <div
-        class="col-12 col-md-6 mobile"
-        data-aos="zoom-in"
-        data-aos-delay="50"
-        data-aos-once="true"
-        data-aos-duration="750"
-      >
+    <div
+      class="row"
+      data-aos="zoom-in"
+      data-aos-delay="50"
+      data-aos-once="true"
+      data-aos-duration="1000"
+    >
+      <div class="col-md-2 col-sm-3 col-xs-4 col-6">
         <div class="collection">
-          <h3 class="collection-header-col">Erfaring med</h3>
-          <div v-for="item in erfaring" :key="item.id">
-            <h5>{{ item.name }}</h5>
-          </div>
+          <img src="/icons/html5.svg" alt="Html5" />
+          <p>HTML5</p>
         </div>
       </div>
-
-      <div
-        class="col-12 col-md-6 mobile"
-        data-aos="zoom-in"
-        data-aos-delay="150"
-        data-aos-once="true"
-        data-aos-duration="750"
-      >
+      <div class="col-md-2 col-sm-3 col-xs-4 col-6">
         <div class="collection">
-          <h3 class="collection-header-col">Med arbejde i</h3>
-          <div v-for="item in arbejde" :key="item.id">
-            <h5>{{ item.name }}</h5>
-          </div>
+          <img src="/icons/css3.svg" alt="Css3" />
+          <p>CSS3</p>
         </div>
+      </div>
+      <div class="col-md-2 col-sm-3 col-xs-4 col-6">
+        <div class="collection">
+          <img src="/icons/javascript.svg" alt="Javascript" />
+          <p>JavaScript</p>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-3 col-xs-4 col-6">
+        <div class="collection">
+          <img src="/icons/vue.svg" alt="Vue" />
+          <p>Vue</p>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-3 col-xs-4 col-6">
+        <div class="collection">
+          <img src="/icons/tailwind.svg" alt="Tailwind css" />
+          <p>Tailwind</p>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-3 col-xs-4 col-6">
+        <div class="collection">
+          <img src="/icons/svelte.svg" alt="Svelte" />
+          <p>Svelte</p>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-3 col-xs-4 col-6">
+        <div class="collection">
+          <img src="/icons/bootstrap.svg" alt="Bootstrap" />
+          <p>Bootstrap</p>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-3 col-xs-4 col-6">
+        <div class="collection">
+          <img src="/icons/vscode.svg" alt="Vscode" />
+          <p>VsCode</p>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-3 col-xs-4 col-6">
+        <div class="collection">
+          <img src="/icons/figma.svg" alt="Figma" />
+          <p>Figma</p>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-3 col-xs-4 col-6">
+        <div class="collection">
+          <img src="/icons/github.svg" alt="Github" />
+          <p>GitHub</p>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-3 col-xs-4 col-6">
+        <div class="collection">
+          <img src="/icons/gitlab.svg" alt="Gitlab" />
+          <p>GitLab</p>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-3 col-xs-4 col-6">
+        <div class="collection">
+          <img src="/icons/accessibility.svg" alt="Accessibility" />
+          <p>Accessibility</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row d-block d-sm-none" style="text-align: center">
+      <div class="col">
+        <button
+          onclick="window.scrollTo({top: 0, behavior: 'smooth'});"
+          class="btn btn-light"
+          style="border-radius: 20px"
+        >
+          <h5 style="font-weight: 600; margin-bottom: 0">
+            Tilbage til toppen
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="currentColor"
+              class="bi bi-arrow-up-short"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"
+              />
+            </svg>
+          </h5>
+        </button>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+img {
+  border: 0;
+}
+
 .logo {
   color: #191a1d;
   display: inline-block;
@@ -163,29 +257,23 @@ export default {
 }
 
 .collection {
-  padding-top: 40px !important;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 115px;
 }
 
-.collection-header-col {
-  color: #191a1d;
-  display: inline-block;
-  font-size: 24px;
-  line-height: 100%;
-  font-weight: 600;
-  letter-spacing: 0.0625rem;
-  text-transform: uppercase;
-  margin-bottom: 40px;
+.collection img {
+  width: 80px;
+  height: auto;
+  padding: 15px 5px;
 }
 
-.collection-header-col::after {
-  margin-top: 8%;
-  max-width: 30%;
-  background: #518882;
-  border-radius: 1000px;
-  content: "";
-  display: block;
-  height: 6px;
-  width: 100%;
+.btn-light {
+  color: #212529 !important;
+  padding: 15px 15px !important;
 }
 
 @media screen and (max-width: 626px) {

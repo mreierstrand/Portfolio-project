@@ -126,7 +126,7 @@ import CollectionBig from '../components/Collection-big.vue';
 
       <div class="col">
         <CollectionBig
-          style="background-color: #FEB5BB !important;"
+          style="background-color: #feb5bb !important"
           data-aos="zoom-in"
           data-aos-delay="50"
           data-aos-once="true"
@@ -189,7 +189,7 @@ import CollectionBig from '../components/Collection-big.vue';
               <a
                 href="https://lassox.com/om-os/kunder"
                 target="_blank"
-                class="btn btn-light text-white"
+                class="btn btn-light"
                 style="color: #181818 !important"
                 >Se live</a
               >
@@ -261,14 +261,14 @@ import CollectionBig from '../components/Collection-big.vue';
               <a
                 href="https://hjemhed.web.app/"
                 target="_blank"
-                class="btn btn-light text-white"
+                class="btn btn-light"
                 style="color: #181818 !important"
                 >Se live</a
               >
               <a
                 href="https://github.com/mreierstrand/5sem-eksamensprojekt"
                 target="_blank"
-                class="btn btn-light text-white"
+                class="btn btn-light"
                 style="color: #181818 !important"
                 >GitHub</a
               >
@@ -296,12 +296,12 @@ import CollectionBig from '../components/Collection-big.vue';
                 />
               </div>
               <div class="col nopadding">
-                <p style="padding: 8.25px;">Let It Grow</p>
+                <p style="padding: 8.25px">Let It Grow</p>
               </div>
             </div>
           </template>
           <template v-slot:collection-subheader-slot>
-            <p style="font-weight: 600; line-height: 32px;">Web applikation</p>
+            <p style="font-weight: 600; line-height: 32px">Web applikation</p>
           </template>
           <template v-slot:collection-text-slot>
             <p>
@@ -379,6 +379,15 @@ import CollectionBig from '../components/Collection-big.vue';
 </template>
 
 <style>
+a.menu-item:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #518882;
+}
+.btn-light:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #518882;
+}
+
 .project-collection {
   height: 400px;
 }

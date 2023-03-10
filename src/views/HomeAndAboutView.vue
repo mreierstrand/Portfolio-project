@@ -68,7 +68,8 @@ import CollectionSmall from '../components/Collection-small.vue';
             target="_blank"
             href="https://www.linkedin.com/in/oliver-eierstrand-3032091a3/"
             >LinkedIn</a
-          >, og mit CV kan ses <a
+          >, og mit CV kan ses
+          <a
             class="link-text"
             target="_blank"
             href="files/OliverEierstrandCV.pdf"
@@ -266,6 +267,10 @@ a:hover {
   color: #518882 !important;
   cursor: pointer;
   font-weight: bold;
+}
+
+.router-link-active {
+  cursor: auto !important;
 }
 
 .link-text {

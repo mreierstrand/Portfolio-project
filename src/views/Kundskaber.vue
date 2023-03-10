@@ -108,7 +108,7 @@ export default {
       <div class="col-md-2 col-sm-3 col-xs-4 col-6">
         <div class="collection">
           <img src="/icons/vscode.svg" alt="Vscode" />
-          <p>VsCode</p>
+          <p>VS Code</p>
         </div>
       </div>
       <div class="col-md-2 col-sm-3 col-xs-4 col-6">

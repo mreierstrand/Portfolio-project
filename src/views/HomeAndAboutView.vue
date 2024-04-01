@@ -68,7 +68,8 @@ import LanguageToggle from '../components/LanguageToggle.vue';
             target="_blank"
             href="https://www.linkedin.com/in/oliver-eierstrand-3032091a3/"
             >LinkedIn</a
-          >, {{ $t('resumeFind') }} <a
+          >, {{ $t('resumeFind') }}
+          <a
             class="link-text"
             target="_blank"
             href="files/OliverEierstrandCV.pdf"
@@ -210,8 +211,7 @@ import LanguageToggle from '../components/LanguageToggle.vue';
 
 <style>
 body {
-  overflow-x: hidden !important;
-  scroll-behavior: smooth !important;
+  scroll-behavior: smooth;
 }
 
 img {

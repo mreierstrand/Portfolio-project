@@ -119,7 +119,6 @@ body {
   height: 100% !important;
   background-color: white !important;
   color: black !important;
-  font-family: Rubik, sans-serif !important;
 }
 
 img {

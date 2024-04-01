@@ -24,7 +24,7 @@ export default {
 .collection {
   padding: 20px 40px;
   border-radius: 20px;
-  background-color: rgb(245, 245, 246);
+  background-color: var(--collection-background);
   margin-bottom: 40px;
 }
 
@@ -33,13 +33,12 @@ export default {
   margin-bottom: 10px;
 }
 
-.collection-text {
-  font-size: 18px;
-  line-height: 175%;
-}
 .collection-subheader {
   font-weight: 600;
 }
 
-
+.collection-text {
+  font-size: 18px;
+  line-height: 175%;
+}
 </style>

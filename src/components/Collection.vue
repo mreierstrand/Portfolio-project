@@ -21,12 +21,6 @@ export default {
 </script>
 
 <style>
-.collection {
-  padding: 20px 40px;
-  border-radius: 20px;
-  background-color: rgb(245, 245, 246);
-  margin-bottom: 60px;
-}
 
 .collection-header {
   margin-bottom: 20px;

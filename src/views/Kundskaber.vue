@@ -90,16 +90,24 @@ export default {
           <h2 class="logo">Oliver Eierstrand</h2>
         </RouterLink>
         <nav id="navbar" class="menu">
-          <RouterLink class="menu-item" to="/">Om mig</RouterLink>
-          <RouterLink class="menu-item" to="/erhvervserfaring"
-            >Erhvervserfaring</RouterLink
-          >
-          <RouterLink class="menu-item" to="/projekter">Projekter</RouterLink>
-          <RouterLink class="menu-item active" to="/kundskaber"
-            >IT-Kundskaber</RouterLink
-          >
-          <RouterLink class="menu-item" to="/uddannelse">Uddannelse</RouterLink>
-          <RouterLink class="menu-item" to="/kontakt">Kontakt</RouterLink>
+          <RouterLink class="menu-item" to="/">{{
+            $t('aboutMeNav')
+          }}</RouterLink>
+          <RouterLink class="menu-item" to="/erhvervserfaring">{{
+            $t('experienceNav')
+          }}</RouterLink>
+          <RouterLink class="menu-item" to="/projekter">{{
+            $t('projectsNav')
+          }}</RouterLink>
+          <RouterLink class="menu-item active" to="/kundskaber">{{
+            $t('itSkillsNav')
+          }}</RouterLink>
+          <RouterLink class="menu-item" to="/uddannelse">{{
+            $t('educationNav')
+          }}</RouterLink>
+          <RouterLink class="menu-item" to="/kontakt">{{
+            $t('contactNav')
+          }}</RouterLink>
         </nav>
       </div>
     </div>
@@ -113,8 +121,10 @@ export default {
         src="/images/computer-small.png"
         alt="Computer billede"
       />
-      <h5 class="domain-header-mobile" style="font-weight: 600">IT-Kundskaber</h5>
-      <h3>Oversigt over mine IT-kundskaber:</h3>
+      <h5 class="domain-header-mobile" style="font-weight: 600">
+        {{ $t('itSkillsShowcaseHeader') }}
+      </h5>
+      <h3>{{ $t('itSkillsShowcaseSubheader') }}</h3>
     </div>
 
     <div class="row">
@@ -126,26 +136,102 @@ export default {
         data-aos-duration="750"
       >
         <div class="collection">
-          <h3 class="collection-header-col">Erfaring med</h3>
-          <div v-for="item in erfaring" :key="item.id">
-            <h5>{{ item.name }}</h5>
-          </div>
+          <img src="/icons/html5.svg" alt="Html5" />
+          <p>HTML5</p>
         </div>
       </div>
-
-      <div
-        class="col-12 col-md-6 mobile"
-        data-aos="zoom-in"
-        data-aos-delay="150"
-        data-aos-once="true"
-        data-aos-duration="750"
-      >
+      <div class="col-md-2 col-sm-3 col-xs-4 col-6">
         <div class="collection">
-          <h3 class="collection-header-col">Med arbejde i</h3>
-          <div v-for="item in arbejde" :key="item.id">
-            <h5>{{ item.name }}</h5>
-          </div>
+          <img src="/icons/css3.svg" alt="Css3" />
+          <p>CSS3</p>
         </div>
+      </div>
+      <div class="col-md-2 col-sm-3 col-xs-4 col-6">
+        <div class="collection">
+          <img src="/icons/javascript.svg" alt="Javascript" />
+          <p>JavaScript</p>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-3 col-xs-4 col-6">
+        <div class="collection">
+          <img src="/icons/vue.svg" alt="Vue" />
+          <p>Vue</p>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-3 col-xs-4 col-6">
+        <div class="collection">
+          <img src="/icons/tailwind.svg" alt="Tailwind css" />
+          <p>Tailwind</p>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-3 col-xs-4 col-6">
+        <div class="collection">
+          <img src="/icons/svelte.svg" alt="Svelte" />
+          <p>Svelte</p>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-3 col-xs-4 col-6">
+        <div class="collection">
+          <img src="/icons/bootstrap.svg" alt="Bootstrap" />
+          <p>Bootstrap</p>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-3 col-xs-4 col-6">
+        <div class="collection">
+          <img src="/icons/vscode.svg" alt="Vscode" />
+          <p>VS Code</p>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-3 col-xs-4 col-6">
+        <div class="collection">
+          <img src="/icons/figma.svg" alt="Figma" />
+          <p>Figma</p>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-3 col-xs-4 col-6">
+        <div class="collection">
+          <img src="/icons/github.svg" alt="Github" />
+          <p>GitHub</p>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-3 col-xs-4 col-6">
+        <div class="collection">
+          <img src="/icons/gitlab.svg" alt="Gitlab" />
+          <p>GitLab</p>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-3 col-xs-4 col-6">
+        <div class="collection">
+          <img src="/icons/accessibility.svg" alt="Accessibility" />
+          <p>Accessibility</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row d-block d-sm-none" style="text-align: center">
+      <div class="col">
+        <button
+          onclick="document.body.scrollTo({top: 0, behavior: 'smooth'});"
+          class="custom-button"
+          style="border-radius: 20px"
+        >
+          <h5 class="nopadding" style="font-weight: 600">
+            {{ $t('backToTopButtonText') }}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="currentColor"
+              class="bi bi-arrow-up-short"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"
+              />
+            </svg>
+          </h5>
+        </button>
       </div>
     </div>
   </div>
@@ -177,15 +263,10 @@ export default {
   margin-bottom: 40px;
 }
 
-.collection-header-col::after {
-  margin-top: 8%;
-  max-width: 30%;
-  background: #518882;
-  border-radius: 1000px;
-  content: "";
-  display: block;
-  height: 6px;
-  width: 100%;
+.collection img {
+  width: 80px;
+  height: auto;
+  padding: 15px 5px;
 }
 
 @media screen and (max-width: 626px) {
@@ -193,6 +274,7 @@ export default {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+
   .domain-header-mobile {
     margin-top: 80px;
   }

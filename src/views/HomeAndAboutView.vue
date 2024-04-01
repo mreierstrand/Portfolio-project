@@ -1,6 +1,7 @@
 <script setup>
 import Collection from '../components/Collection.vue';
 import CollectionSmall from '../components/Collection-small.vue';
+import LanguageToggle from '../components/LanguageToggle.vue';
 </script>
 
 <template>
@@ -24,55 +25,54 @@ import CollectionSmall from '../components/Collection-small.vue';
           <h2 class="logo">Oliver Eierstrand</h2>
         </RouterLink>
         <nav id="navbar" class="menu">
-          <RouterLink class="menu-item active" to="/">Om mig</RouterLink>
-          <RouterLink class="menu-item" to="/erhvervserfaring"
-            >Erhvervserfaring</RouterLink
-          >
-          <RouterLink class="menu-item" to="/projekter">Projekter</RouterLink>
-          <RouterLink class="menu-item" to="/kundskaber"
-            >IT-Kundskaber</RouterLink
-          >
-          <RouterLink class="menu-item" to="/uddannelse">Uddannelse</RouterLink>
-          <RouterLink class="menu-item" to="/kontakt">Kontakt</RouterLink>
+          <RouterLink class="menu-item active" to="/">{{
+            $t('aboutMeNav')
+          }}</RouterLink>
+          <RouterLink class="menu-item" to="/erhvervserfaring">{{
+            $t('experienceNav')
+          }}</RouterLink>
+          <RouterLink class="menu-item" to="/projekter">{{
+            $t('projectsNav')
+          }}</RouterLink>
+          <RouterLink class="menu-item" to="/kundskaber">{{
+            $t('itSkillsNav')
+          }}</RouterLink>
+          <RouterLink class="menu-item" to="/uddannelse">{{
+            $t('educationNav')
+          }}</RouterLink>
+          <RouterLink class="menu-item" to="/kontakt">{{
+            $t('contactNav')
+          }}</RouterLink>
         </nav>
       </div>
     </div>
-    <Collection
-      img_src="/images/wave.png"
-      data-aos="zoom-in"
-      data-aos-delay="50"
-      data-aos-once="true"
-      data-aos-duration="1000"
-    >
+    <Collection img_src="/images/wave.png">
       <template v-slot:collection-header-slot>
-        <p>Om mig</p>
+        <p>{{ $t('aboutMeNav') }}</p>
       </template>
       <template v-slot:collection-text-slot>
         <p>
-          Mit navn er Oliver Eierstrand. Jeg er 27 år og bor i
-          hovedstadsområdet. Jeg er uddannet Datamatiker på Erhvervsakademi
-          Zealand i Roskilde og jeg har en stor interesse for Frontend og
-          Web-udvikling.
+          {{ $t('introduction') }}
         </p>
         <p>
-          Jeg er desuden at finde på
+          {{ $t('findMeOn') }}
           <a
             class="link-text"
             target="_blank"
             href="https://github.com/mreierstrand"
             >GitHub</a
           >
-          og
+          {{ $t('and') }}
           <a
             class="link-text"
             target="_blank"
             href="https://www.linkedin.com/in/oliver-eierstrand-3032091a3/"
             >LinkedIn</a
-          >, og mit CV kan ses <a
+          >, {{ $t('resumeFind') }} <a
             class="link-text"
             target="_blank"
             href="files/OliverEierstrandCV.pdf"
-            >her</a
+            >{{ $t('here') }}</a
           >.
         </p>
       </template>
@@ -85,8 +85,8 @@ import CollectionSmall from '../components/Collection-small.vue';
       data-aos-once="true"
       data-aos-duration="1000"
     >
-      <h5 style="font-weight: 600">Stadig nysgerrig?</h5>
-      <h3>Okay, her er lidt mere information om mig:</h3>
+      <h5 style="font-weight: 600">{{ $t('stillCurious') }}</h5>
+      <h3>{{ $t('informationHeader') }}</h3>
     </div>
 
     <div
@@ -100,15 +100,11 @@ import CollectionSmall from '../components/Collection-small.vue';
         <div class="col-12 col-md-6 col-mobile">
           <CollectionSmall img_src="/images/curious.png">
             <template v-slot:collection-header-slot>
-              <p>Nysgerrig</p>
+              <p>{{ $t('curiousHeader') }}</p>
             </template>
             <template v-slot:collection-text-slot>
               <p class="collection-text">
-                Jeg er nysgerrig af natur og opsøger altid ny viden. Jeg har en
-                trang til at undersøge ting nærmere og dette hjælper mig til at
-                forstå mig selv og andre bedre. I form af min nysgerrighed har
-                jeg nemt ved at tilegne mig ny viden, hvilket har givet mig en
-                fordel under min uddannelse, samt i mine praktikophold.
+                {{ $t('curiousText') }}
               </p>
             </template>
           </CollectionSmall>
@@ -116,15 +112,11 @@ import CollectionSmall from '../components/Collection-small.vue';
         <div class="col-12 col-md-6 col-mobile">
           <CollectionSmall img_src="/images/magnifying.png">
             <template v-slot:collection-header-slot>
-              <p>Detaljeorienteret</p>
+              <p>{{ $t('detailHeader') }}</p>
             </template>
             <template v-slot:collection-text-slot>
               <p class="collection-text">
-                Jeg har sans for detaljer og er typen, der ikke kan lade være
-                med at tjekke mit arbejde igennem en ekstra gang.
-                <br />Jeg gør en dyd ud af at sørge for, at det jeg laver er
-                godt og grundigt tjekket igennem, og jeg kan først slappe af,
-                når jeg ved, at det jeg leverer, er ordenligt.
+                {{ $t('detailText') }}
               </p>
             </template>
           </CollectionSmall>
@@ -135,16 +127,11 @@ import CollectionSmall from '../components/Collection-small.vue';
         <div class="col-12 col-md-6 col-mobile">
           <CollectionSmall img_src="/images/graduation.png">
             <template v-slot:collection-header-slot>
-              <p>Nyuddannet</p>
+              <p>{{ $t('newGraduateHeader') }}</p>
             </template>
             <template v-slot:collection-text-slot>
               <p class="collection-text">
-                Jeg ved, at jeg er "grøn" og ikke har så meget erhvervserfaring,
-                men det ændrer ikke på det faktum, at jeg har et brændende ønske
-                om at blive en god udvikler. Jeg vil udvide mine kompetencer
-                indenfor Frontend- og Webudvikling og jeg ønsker at blive en del
-                af en virksomhed, hvor der er plads til, at jeg kan udfolde og
-                udvikle mig både fagligt og personligt.
+                {{ $t('newGraduateText') }}
               </p>
             </template>
           </CollectionSmall>
@@ -152,16 +139,11 @@ import CollectionSmall from '../components/Collection-small.vue';
         <div class="col-12 col-md-6 col-mobile">
           <CollectionSmall img_src="/images/computer.png">
             <template v-slot:collection-header-slot>
-              <p>Gode karakterer</p>
+              <p>{{ $t('goodGradesHeader') }}</p>
             </template>
             <template v-slot:collection-text-slot>
               <p class="collection-text">
-                Jeg har i mit uddannelsesforløb som Datamatiker bestræbt mig på
-                at gå efter topkarakterer i alle opgaver. Det har krævet
-                motivation og dedikation, samt en skarp gruppestruktur og et
-                godt arbejdsmiljø. Dette har jeg været en del af og har
-                afsluttet Datamatikeruddannelsen med et karaktergennemsnit på
-                10,8, herunder 12 i min afsluttende Hovedopgave på 5. Semester.
+                {{ $t('goodGradesText') }}
               </p>
             </template>
           </CollectionSmall>
@@ -172,17 +154,10 @@ import CollectionSmall from '../components/Collection-small.vue';
         <div class="col-12 col-md-6 col-mobile">
           <CollectionSmall img_src="/images/attention-to-detail.png">
             <template v-slot:collection-header-slot>
-              <p>Udadvendt</p>
+              <p>{{ $t('outgoingHeader') }}</p>
             </template>
             <template v-slot:collection-text-slot>
-              <p class="collection-text">
-                Jeg er udadvendt og meget smilende som person. Jeg holder af den
-                gode kontakt med andre mennesker og trives på tomandshånd og
-                især i grupper.
-                <br />Jeg kan lide at tale om mine ideer og problemer i stedet
-                for at sidde med dem alene. <br />At være udadvendt har sine
-                fordele, og det betyder, at jeg blandt andet er en god lytter.
-              </p>
+              <p class="collection-text">{{ $t('outgoingText') }}</p>
             </template>
           </CollectionSmall>
         </div>
@@ -190,16 +165,11 @@ import CollectionSmall from '../components/Collection-small.vue';
         <div class="col-12 col-md-6 col-mobile">
           <CollectionSmall img_src="/images/running.png">
             <template v-slot:collection-header-slot>
-              <p>Initiativrig</p>
+              <p>{{ $t('initiativeHeader') }}</p>
             </template>
             <template v-slot:collection-text-slot>
               <p class="collection-text">
-                Jeg er initiativrig og får altid en masse ideer. Min
-                nysgerrighed hjælper mig til at udfordre og udforske, det der
-                endnu ikke er tænkt på, og jeg trives i et miljø, hvor der er
-                højt til loftet og plads til nye initiativer og alle mine idéer.
-                Derudover er jeg god til at lytte til andres ideer og komme med
-                feedback.
+                {{ $t('initiativeText') }}
               </p>
             </template>
           </CollectionSmall>
@@ -210,12 +180,12 @@ import CollectionSmall from '../components/Collection-small.vue';
     <div class="row" style="text-align: center">
       <div class="col">
         <button
-          onclick="window.scrollTo({top: 0, behavior: 'smooth'});"
-          class="btn btn-light"
+          onclick="document.body.scrollTo({top: 0, behavior: 'smooth'});"
+          class="custom-button"
           style="border-radius: 20px"
         >
           <h5 class="nopadding" style="font-weight: 600">
-            Tilbage til toppen
+            {{ $t('backToTopButtonText') }}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="40"
@@ -233,25 +203,24 @@ import CollectionSmall from '../components/Collection-small.vue';
         </button>
       </div>
     </div>
+
+    <LanguageToggle />
   </div>
 </template>
 
-<style scoped>
-html,
+<style>
 body {
-  width: 100% !important;
-  height: 100% !important;
-  background-color: white !important;
-  color: black !important;
-  font-family: Rubik, sans-serif !important;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-x: hidden !important;
+  scroll-behavior: smooth !important;
 }
 
 img {
   height: auto;
   max-width: 100%;
+}
+
+p {
+  color: var(--color-text) !important;
 }
 
 a {
@@ -317,9 +286,36 @@ a:hover {
   margin: 0 !important;
 }
 
-.btn-light {
-  color: #212529 !important;
-  padding: 15px 15px;
+.custom-button {
+  color: var(--color-text);
+  background-color: var(--collection-background);
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, 0.1) 0 6px 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.custom-button:hover {
+  box-shadow: var(--color-text) 0 0 0 3px, transparent 0 0 0 0;
 }
 
 .active {
@@ -334,6 +330,10 @@ a:hover {
   .margin-right {
     margin-left: -15px !important;
   }
+  .domain-header-mobile {
+    margin-top: 80px;
+  }
+
   .mobile-wrapper {
     padding-top: 20px !important;
   }

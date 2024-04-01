@@ -18,18 +18,24 @@
           <h2 class="logo">Oliver Eierstrand</h2>
         </RouterLink>
         <nav id="navbar" class="menu">
-          <RouterLink class="menu-item" to="/">Om mig</RouterLink>
-          <RouterLink class="menu-item" to="/erhvervserfaring"
-            >Erhvervserfaring</RouterLink
-          >
-          <RouterLink class="menu-item" to="/projekter">Projekter</RouterLink>
-          <RouterLink class="menu-item" to="/kundskaber"
-            >IT-Kundskaber</RouterLink
-          >
-          <RouterLink class="menu-item" to="/uddannelse">Uddannelse</RouterLink>
-          <RouterLink class="menu-item active" to="/kontakt"
-            >Kontakt</RouterLink
-          >
+          <RouterLink class="menu-item" to="/">{{
+            $t('aboutMeNav')
+          }}</RouterLink>
+          <RouterLink class="menu-item" to="/erhvervserfaring">{{
+            $t('experienceNav')
+          }}</RouterLink>
+          <RouterLink class="menu-item" to="/projekter">{{
+            $t('projectsNav')
+          }}</RouterLink>
+          <RouterLink class="menu-item" to="/kundskaber">{{
+            $t('itSkillsNav')
+          }}</RouterLink>
+          <RouterLink class="menu-item" to="/uddannelse">{{
+            $t('educationNav')
+          }}</RouterLink>
+          <RouterLink class="menu-item active" to="/kontakt">{{
+            $t('contactNav')
+          }}</RouterLink>
         </nav>
       </div>
     </div>
@@ -43,8 +49,10 @@
         src="/images/contact.png"
         alt="Kontakt billede"
       />
-      <h5 class="domain-header-mobile" style="font-weight: 600">Kontakt mig</h5>
-      <h3>Hvis du har spørgsmål eller andet</h3>
+      <h5 class="domain-header-mobile" style="font-weight: 600">
+        {{ $t('contactHeader') }}
+      </h5>
+      <h3>{{ $t('contactSubheader') }}</h3>
     </div>
 
     <div class="container mobile">
@@ -54,12 +62,13 @@
         data-aos-once="true"
         data-aos-duration="1000"
       >
-        <p style="font-size: 20px; line-height; 24px;">
-          Så kan jeg fanges på sociale medier, via mail eller på
-          <a href="tel:+4540475805"><b>+4540475805</b></a
+        <p style="font-size: 20px; line-height: 24px">
+          {{ $t('contactMessage1') }}
+          <a href="tel:+4540475805"
+            ><b>{{ $t('contactPhone') }}</b></a
           >.
         </p>
-        <div class="col nopadding socials">
+        <div class="col socials">
           <a
             style="margin-right: 50px"
             href="https://www.linkedin.com/in/oliver-eierstrand/"
@@ -82,9 +91,8 @@
           ></a>
         </div>
 
-        <p style="font-size: 20px; line-height; 24px; margin-bottom: 40px;">
-          Hvis de ikke er noget for dig, kan du altid sende mig en besked via
-          kontaktformen. Jeg lover at vende tilbage!
+        <p style="font-size: 20px; line-height: 24px; margin-bottom: 40px">
+          {{ $t('contactMessage2') }}
         </p>
       </div>
       <div
@@ -103,7 +111,7 @@
               <div class="col-12 col-md-6">
                 <label
                   ><p class="label-text">
-                    Navn <span class="form-required">*</span>
+                    {{ $t('contactName') }} <span class="form-required">*</span>
                   </p></label
                 >
                 <input type="text" name="name" class="form-control" required />
@@ -111,7 +119,8 @@
               <div class="col-12 col-md-6 label-mobile">
                 <label
                   ><p class="label-text">
-                    Email <span class="form-required">*</span>
+                    {{ $t('contactEmail') }}
+                    <span class="form-required">*</span>
                   </p></label
                 >
                 <input
@@ -126,13 +135,14 @@
           <div class="form-group">
             <label
               ><p class="label-text">
-                Din besked <span class="form-required">*</span>
+                {{ $t('contactYourMessage') }}
+                <span class="form-required">*</span>
               </p></label
             >
             <textarea class="form-control" name="message" required></textarea>
           </div>
-          <button type="submit" class="btn btn-lg btn-dark btn-block">
-            Send besked
+          <button type="submit" class="custom-button">
+            {{ $t('contactSendMessage') }}
           </button>
         </form>
       </div>
@@ -140,7 +150,7 @@
   </div>
 </template>
 
-<style scoped>
+<style>
 input,
 textarea {
   border: 1px solid #e2e2e2;
@@ -155,8 +165,14 @@ textarea {
 }
 
 input {
-  height: 50px;
+  height: 50px !important;
 }
+
+input,
+textarea {
+  color: var(--text-color) !important;
+}
+
 h4 {
   margin: 0 !important;
 }
@@ -173,6 +189,18 @@ textarea:hover {
 
 p {
   margin-bottom: 20px;
+}
+
+.form-control {
+  background-color: var(--collection-background);
+}
+
+.form-control:focus {
+  color: var(--text-color);
+  background-color: var(--collection-background);
+  border-color: var(--color-text);
+  outline: 0;
+  box-shadow: var(--color-text) 0 0 0 1px, transparent 0 0 0 0;
 }
 
 .row {
@@ -203,10 +231,16 @@ p {
   margin-bottom: 20px;
 }
 
+.page,
+.wrap {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .wrap {
   max-width: 1024px;
   padding: 30px;
-  padding-top: 80px !important;
+  padding-top: 80px;
   width: 100%;
 }
 
@@ -224,6 +258,5 @@ p {
   .domain-header-mobile {
     margin-top: 80px;
   }
-  
 }
 </style>

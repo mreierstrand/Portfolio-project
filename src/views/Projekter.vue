@@ -24,18 +24,18 @@ import CollectionBig from '../components/Collection-big.vue';
           <h2 class="logo">Oliver Eierstrand</h2>
         </RouterLink>
         <nav id="navbar" class="menu">
-          <RouterLink class="menu-item" to="/">Om mig</RouterLink>
+          <RouterLink class="menu-item" to="/">{{$t('aboutMeNav')}}</RouterLink>
           <RouterLink class="menu-item" to="/erhvervserfaring"
-            >Erhvervserfaring</RouterLink
+            >{{$t('experienceNav')}}</RouterLink
           >
           <RouterLink class="menu-item active" to="/projekter"
-            >Projekter</RouterLink
+            >{{$t('projectsNav')}}</RouterLink
           >
           <RouterLink class="menu-item" to="/kundskaber"
-            >IT-Kundskaber</RouterLink
+            >{{$t('itSkillsNav')}}</RouterLink
           >
-          <RouterLink class="menu-item" to="/uddannelse">Uddannelse</RouterLink>
-          <RouterLink class="menu-item" to="/kontakt">Kontakt</RouterLink>
+          <RouterLink class="menu-item" to="/uddannelse">{{$t('educationNav')}}</RouterLink>
+          <RouterLink class="menu-item" to="/kontakt">{{$t('contactNav')}}</RouterLink>
         </nav>
       </div>
     </div>
@@ -48,14 +48,14 @@ import CollectionBig from '../components/Collection-big.vue';
         src="/images/desktop.png"
         alt="Desktop computer"
       />
-      <h5 class="domain-header-mobile" style="font-weight: 600">Projekter</h5>
-      <h3>Information om projekter jeg har udviklet på:</h3>
+      <h5 class="domain-header-mobile" style="font-weight: 600">{{ $t('projectsHeader') }}</h5>
+      <h3>{{ $t('projectsSubheader') }}</h3>
     </div>
 
     <div class="row">
       <div class="col-12 col-lg-6">
         <CollectionBig
-          style="background-color: #e9f3fd !important"
+          style="background-color: var(--collection-background)"
           data-aos="zoom-in"
           data-aos-delay="150"
           data-aos-once="true"
@@ -71,25 +71,20 @@ import CollectionBig from '../components/Collection-big.vue';
                 />
               </div>
               <div class="col nopadding">
-                <p style="padding: 8.25px">Portfolio</p>
+                <p style="padding: 8.25px">{{$t('portfolioHeader')}}</p>
               </div>
             </div>
           </template>
           <template v-slot:collection-subheader-slot>
-            <p style="font-weight: 600; line-height: 32px">Web applikation</p>
+            <p style="font-weight: 600; line-height: 32px">{{$t('portfolioSubheader')}}</p>
           </template>
           <template v-slot:collection-text-slot>
             <p>
-              Portfolio udviklet for at have et online CV og for at fremvise min
-              personlige erhvervserfaring og uddannelse samt mine projekter og
-              IT-kundskaber. Mit portfolio giver mig frihed og kreativitet til
-              at fremvise mig selv og hvad jeg kan. Jeg har mulighed for at
-              fremvise min personlighed og kan skille mig ud fra mængden, samt
-              benytte mit online portfolio som vedhæftning til jobansøgninger.
+              {{$t('portfolioInformation')}}
             </p>
 
             <p style="font-weight: bold">
-              Techstack i dette projekt:<br />
+              {{ $t('techStack') }}<br />
               <span
                 class="badge badge-pill mr-2"
                 style="background-color: white"
@@ -116,7 +111,7 @@ import CollectionBig from '../components/Collection-big.vue';
                 href="https://github.com/mreierstrand/Portfolio-project"
                 target="_blank"
                 class="btn btn-light"
-                style="color: #181818 !important"
+                style="color: #181818 !important; background-color: white;"
                 >GitHub</a
               >
             </ul>
@@ -142,29 +137,25 @@ import CollectionBig from '../components/Collection-big.vue';
                 />
               </div>
               <div class="col nopadding">
-                <p style="padding: 8.25px">Lasso X</p>
+                <p class="p-dark" style="padding: 8.25px">{{ $t('lassoProjectHeader') }}</p>
               </div>
             </div>
           </template>
           <template v-slot:collection-subheader-slot>
-            <p style="font-weight: 600; line-height: 32px">
-              Underside til Lasso X hjemmeside &amp; arbejde på Lasso Portal
+            <p class="p-dark" style="font-weight: 600; line-height: 32px">
+              {{ $t('lassoSubheader') }}
             </p>
           </template>
           <template v-slot:collection-text-slot>
-            <p>
-              Arbejdet på undersiden til Lasso X fremviser Lasso Xs kunders
-              mening om produktet og indeholder videofremvisning,
-              kundeudtalelser og en kontaktformular.
+            <p class="p-dark">
+              {{ $t('lassoInformation1') }}
             </p>
-            <p>
-              Arbejdet på Lasso Xs portal indeholdte udarbejdelse af
-              forbedringer til allerede eksisterende kode/features, samt
-              tilføjelse af funktionalitet til brug for kunder af portalen.
+            <p class="p-dark">
+              {{ $t('lassoInformation2') }}
             </p>
 
-            <p style="font-weight: bold">
-              Techstack i disse projekter:<br />
+            <p class="p-dark" style="font-weight: bold">
+              {{ $t('techStack') }}<br />
               <span
                 class="badge badge-pill mr-2"
                 style="background-color: #eee; color: black"
@@ -191,7 +182,7 @@ import CollectionBig from '../components/Collection-big.vue';
                 target="_blank"
                 class="btn btn-light text-white"
                 style="color: #181818 !important"
-                >Se live</a
+                >{{ $t('lassoWatchLive') }}</a
               >
             </ul>
           </template>
@@ -218,28 +209,25 @@ import CollectionBig from '../components/Collection-big.vue';
                 />
               </div>
               <div class="col nopadding">
-                <p style="padding: 8.25px">Hjemhed</p>
+                <p class="p-dark" style="padding: 8.25px">{{ $t('hjemhedHeader')  }}</p>
               </div>
             </div>
           </template>
           <template v-slot:collection-subheader-slot>
-            <p style="font-weight: 600; line-height: 32px">
-              Progressive Web Applikation
+            <p class="p-dark" style="font-weight: 600; line-height: 32px">
+              {{ $t('hjemhedSubheader') }}
             </p>
           </template>
           <template v-slot:collection-text-slot>
-            <p>
-              Hjemhed er en PWA, hvor hovedformålet er at etablere kontakt
-              mellem nye og eksisterende beboere i et lokalområde. Beboere kan
-              skrive og “markedsføre” sit lokalområd for at gøre det mere
-              eftertragtet. Brugere kan sætte sin bolig til salg uden om en
-              ejendomsmægler.<br />
-              Derudover kan Hjemhed agere som et socialt medie, hvor brugere kan
-              interagere og chatte med hinanden.
+            <p class="p-dark">
+              {{ $t('hjemhedInformation1') }}
+              <br />
+              {{ $t('hjemhedInformation2') }}
             </p>
 
-            <p style="font-weight: bold">
-              Techstack i dette projekt:<br />
+            <p class="p-dark" style="font-weight: bold">
+              {{ $t('techStack') }}
+              <br />
               <span class="badge badge-pill mr-2" style="background-color: #eee"
                 >Vue.js</span
               >
@@ -263,7 +251,7 @@ import CollectionBig from '../components/Collection-big.vue';
                 target="_blank"
                 class="btn btn-light text-white"
                 style="color: #181818 !important"
-                >Se live</a
+                >{{ $t('lassoWatchLive') }}</a
               >
               <a
                 href="https://github.com/mreierstrand/5sem-eksamensprojekt"
@@ -296,23 +284,22 @@ import CollectionBig from '../components/Collection-big.vue';
                 />
               </div>
               <div class="col nopadding">
-                <p style="padding: 8.25px;">Let It Grow</p>
+                <p class="p-dark" style="padding: 8.25px">{{ $t('letItGrowHeader') }}</p>
               </div>
             </div>
           </template>
           <template v-slot:collection-subheader-slot>
-            <p style="font-weight: 600; line-height: 32px;">Web applikation</p>
+            <p class="p-dark" style="font-weight: 600; line-height: 32px">
+              {{ $t('letItGrowSubheader') }}
+            </p>
           </template>
           <template v-slot:collection-text-slot>
-            <p>
-              Let It Grow er en webapplikation, jeg har arbejdet på i
-              forbindelse med 3. semester på Datamatikeruddannelsen. Formålet
-              med denne webapplikation, var at lave en hjemmeside, som giver
-              haveejere de bedste muligheder for at pleje deres have.
+            <p class="p-dark">
+              {{ $t('letItGrowInformation') }}
             </p>
 
-            <p style="font-weight: bold">
-              Techstack i dette projekt:<br />
+            <p class="p-dark" style="font-weight: bold">
+              {{ $t('techStack') }}<br />
               <span class="badge badge-pill mr-2" style="background-color: #eee"
                 >Vue.js</span
               >
@@ -335,7 +322,7 @@ import CollectionBig from '../components/Collection-big.vue';
                 target="_blank"
                 class="btn btn-light"
                 style="color: #181818 !important"
-                >Se live</a
+                >{{ $t('letItGrowWatchLive') }} </a
               >
               <a
                 href="https://github.com/Ojay89/LetItGrow"
@@ -352,12 +339,11 @@ import CollectionBig from '../components/Collection-big.vue';
     <div class="row button-up" style="text-align: center; display: block">
       <div class="col">
         <button
-          onclick="window.scrollTo({top: 0, behavior: 'smooth'});"
-          class="btn btn-light"
-          style="border-radius: 20px"
+          onclick="document.body.scrollTo({top: 0, behavior: 'smooth'});"
+          class="custom-button"
         >
           <h5 style="font-weight: 600; margin-bottom: 0">
-            Tilbage til toppen
+            {{$t('backToTopButtonText')}}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="40"
@@ -383,6 +369,10 @@ import CollectionBig from '../components/Collection-big.vue';
   height: 400px;
 }
 
+p.p-dark {
+  color: var(--text-dark) !important;
+}
+
 .viewProject {
   font-size: 1.5rem;
   margin-left: auto;
@@ -392,6 +382,34 @@ import CollectionBig from '../components/Collection-big.vue';
   width: 80%;
   text-align: center;
   white-space: nowrap;
+}
+
+.custom-button {
+  color: var(--color-text);
+  background-color: var(--collection-background);
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, 0.1) 0 6px 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
 a.btn {
@@ -406,10 +424,11 @@ a.btn {
   text-transform: uppercase;
 }
 
+.badge {
+  color: #000000;
+}
+
 @media only screen and (min-width: 991px) {
-  .button-up {
-    display: none !important;
-  }
   .last-collection-big {
     margin-bottom: 0 !important;
   }

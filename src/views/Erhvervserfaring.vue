@@ -22,16 +22,16 @@ import CollectionBig from './../components/Collection-big.vue';
           <h2 class="logo">Oliver Eierstrand</h2>
         </RouterLink>
         <nav id="navbar" class="menu">
-          <RouterLink class="menu-item" to="/">Om mig</RouterLink>
+          <RouterLink class="menu-item" to="/">{{$t('aboutMeNav')}}</RouterLink>
           <RouterLink class="menu-item active" to="/erhvervserfaring"
-            >Erhvervserfaring</RouterLink
+            >{{$t('experienceNav')}}</RouterLink
           >
-          <RouterLink class="menu-item" to="/projekter">Projekter</RouterLink>
+          <RouterLink class="menu-item" to="/projekter">{{$t('projectsNav')}}</RouterLink>
           <RouterLink class="menu-item" to="/kundskaber"
-            >IT-Kundskaber</RouterLink
+            >{{$t('itSkillsNav')}}</RouterLink
           >
-          <RouterLink class="menu-item" to="/uddannelse">Uddannelse</RouterLink>
-          <RouterLink class="menu-item" to="/kontakt">Kontakt</RouterLink>
+          <RouterLink class="menu-item" to="/uddannelse">{{$t('educationNav')}}</RouterLink>
+          <RouterLink class="menu-item" to="/kontakt">{{$t('contactNav')}}</RouterLink>
         </nav>
       </div>
     </div>
@@ -45,9 +45,9 @@ import CollectionBig from './../components/Collection-big.vue';
         alt="CV profil billede"
       />
       <h5 class="domain-header-mobile" style="font-weight: 600">
-        Erhvervserfaring
+        {{$t('experienceHeader')}}
       </h5>
-      <h3>Information om min erhvervserfaring:</h3>
+      <h3>{{$t('experienceSubheader')}}</h3>
     </div>
 
     <CollectionBig
@@ -63,88 +63,90 @@ import CollectionBig from './../components/Collection-big.vue';
           </div>
           <div class="col nopadding">
             <p style="padding: 8.25px">
-              Frontend udvikler hos Magenta ApS
+              {{$t('magentaHeader')}}
             </p>
           </div>
         </div>
       </template>
       <template v-slot:collection-subheader-slot>
-        <p style="font-weight: 600">April 2022 - Januar 2023</p>
+        <p style="font-weight: 600">{{$t('magentaTimeframe')}}</p>
       </template>
       <template v-slot:collection-text-slot>
         <p>
-          Jeg blev i april 2022 ansat hos Magenta ApS, i første omgang som nyuddannet junior udvikler. Dog blev min stilling allerede fra start ændret fra at være junior i et oplæringsforløb hos en senior frontend udvikler, til at jeg måtte overtage alle nuværende og fremtidige arbejdsopgaver fra senior frontend udvikleren, da denne opsagde sin stilling kort før jeg tiltrådte hos Magenta ApS.
+          {{$t('magentaIntro')}}
         </p>
-        <p style="font-weight: bold">Arbejdsopgaver hos Magenta:</p>
+        <p style="font-weight: bold">{{$t('magentaWorkAssignments')}}</p>
         <ul>
           <li>
-            Håndtering af alle frontend-relaterede arbejdsopgaver i Magenta, samt vejledning herom til andre udviklere i virksomheden.
+            {{$t('magentaWorkAssignment1')}}
           </li>
           <li>
-            Stå for udviklingen af et tværgående designsystem til Magentas produkter.
+            {{$t('magentaWorkAssignment2')}}
           </li>
           <li>
-            Lede en frontend Erfa-gruppe, med henblik på at frontend-vidensdele, forbedre frontend arbejdet på tværs af Magentas projekter, samt sætte retning for frontendarbejdet i de forskellige teams i Magenta.<br>
-            Herunder:
+            {{$t('magentaWorkAssignment3')}}
+            <br>
+            {{$t('magentaIncluding')}}
             <ul>
               <li>
-                Stå for planlægning, indkaldelse og opfølgning af ugentlige Erfa-møder.
+                {{$t('magentaWorkAssignment31') }}
               </li>
               <li>
-                Stå for fremtidig implementering af idéer i frontenden på tværs af Magentas projekter.
+                {{ $t('magentaWorkAssignment32') }}
               </li>            
             </ul>
           </li>
-          <li>
-            Stå for planlægning af, arbejdsfordeling under, og opfølgning på en frontend-workshop, med henblik på at omskrive Magentas største projekt:
+          <li>{{ $t('magentaWorkAssignment4') }}
             <a
               class="link-text"
               href="https://os2.eu/produkt/os2mo"
-              target="_blank">OS2MO's</a>
-            frontend fra Vue.js til Svelte.
+              target="_blank">{{$t('magentaWorkAssignment4OS2MO')}}</a>
+            {{$t('magentaWorkAssignment41')}}
           </li>
           <li>
-            Stå i spidsen for udviklingen af en ny Svelte frontend til OS2MO.<br>Herunder:
+            {{ $t('magentaWorkAssignment5') }}
+            <br>
+            {{$t('magentaIncluding')}}
             <ul>
               <li>
-                Brainstorming og udvikling af nyt Design System til OS2MO, inden den nye frontend blev implementeret. Design Systemet indeholder definitioner om blandt andet:
+                {{ $t('magentaWorkAssignment51') }}
                 <ul>
                   <li>
-                    Farvepalette, typografi, text styles, spaces, responsive design, accessibility o.a.
+                    {{ $t('magentaWorkAssignment511') }}
                   </li>
                 </ul>
                 <li>
-                    Udarbejdelse af mockups og prototyper i Figma.
+                  {{ $t('magentaWorkAssignment52') }}
                   </li>
               </li>
               <li>
-                Forbedre UI og UX i OS2MO, for at gøre OS2MO mere brugervenligt og intuitivt.
+                {{ $t('magentaWorkAssignment53') }}
               </li>
             </ul>
           </li>
           <li>
-            Stå for alt vedrørende Accessibility in design i Magentas projekter. Herunder vejledning om Accessibility til alle udviklingsteams i Magenta.
+            {{ $t('magentaWorkAssignment6') }}
           </li>
         </ul>
 
         <p>
-          Hent reference og anbefaling fra Magenta ApS
+          {{ $t('magentaWorkAssignemntReference') }}
           <a
             class="link-text"
             href="files/Reference_Magenta.pdf"
             target="_blank"
-            >her</a
+            >{{$t('here')}}</a
           >.
         </p>
       </template>
     </CollectionBig>
 
     <CollectionBig
-      data-aos="zoom-in"
-      data-aos-delay="50"
-      data-aos-once="true"
-      data-aos-duration="750"
     >
+    <!-- data-aos="zoom-in"
+    data-aos-delay="50"
+    data-aos-once="true"
+    data-aos-duration="750" -->
       <template v-slot:collection-header-slot>
         <div class="row">
           <div style="max-width: 75px" class="col">
@@ -152,112 +154,101 @@ import CollectionBig from './../components/Collection-big.vue';
           </div>
           <div class="col nopadding">
             <p style="padding: 8.25px">
-              Frontend virksomhedspraktik hos Lasso X
+              {{ $t('lassoHeader') }}
             </p>
           </div>
         </div>
       </template>
       <template v-slot:collection-subheader-slot>
-        <p style="font-weight: 600">Oktober 2021 - November 2021</p>
+        <p style="font-weight: 600">{{ $t('lassoTimeframe') }}</p>
       </template>
       <template v-slot:collection-text-slot>
         <p>
-          Jeg har efter endt uddannelse været i virksomhedspraktik hos Lasso X.
-          Dette har jeg været for at erhverve mig yderlig erfaring indenfor
-          frontend-udvikling i HTML, CSS, JavaScript og Vue.js. <br /><br />Mine
-          primære arbejdsopgaver, under virksomhedspraktikken hos Lasso, bestod
-          af udarbejdelse af en underside til
+
+        {{ $t('lassoIntro1') }}
+          <br />
+          <br />
+          {{ $t('lassoIntro2') }}
           <a class="link-text" href="https://lassox.com/" target="_blank"
-            >Lasso X</a
+            >{{ $t('lasso') }}</a
           >
-          som går under navnet: "Mød vores kunder". Det direkte link kan findes
+          {{ $t('lassoIntro21') }}
           <a
             class="link-text"
             href="https://lassox.com/om-os/kunder"
             target="_blank"
-            >her</a
-          >. <br />I denne case har jeg arbejdet med videoer, kundeudtalelser og
-          en kontaktformular. Ydermere har jeg arbejdet på Lasso-portalen, hvori
-          jeg har udarbejdet forbedringer til allerede eksisterende
-          kode/features, samt tilføjet yderligere funktionalitet til brug for
-          kunder af Lasso Xs produkt.
+            >{{ $t('here') }}</a
+          >. 
+          <br />
+          {{ $t('lassoIntro22') }}
         </p>
 
-        <p style="font-weight: bold">Det jeg lærte hos Lasso X:</p>
+        <p style="font-weight: bold">{{$t('lassoAssignments')}}</p>
         <ul>
-          <li>Udvidelse af kompetencer indenfor frontendudvikling.</li>
-          <li>Bedre forståelse for den daglige gang i en IT-virksomhed.</li>
-          <li>Forståelse for arbejdsgangen i et team på 8 personer.</li>
+          <li>{{ $t('lassoAssignment1') }}</li>
+          <li>{{ $t('lassoAssignment2')}}</li>
+          <li>{{ $t('lassoAssignment3') }}</li>
         </ul>
 
         <p>
-          Hent reference og anbefaling fra Lasso X
+          {{$t('lassoWorkAssignemntReference')}}
           <a
             class="link-text"
             href="files/Reference_Lasso_X.pdf"
             target="_blank"
-            >her</a
+            >{{$t('here')}}</a
           >.
         </p>
       </template>
     </CollectionBig>
 
     <CollectionBig
-      data-aos="zoom-in"
-      data-aos-delay="100"
-      data-aos-once="true"
-      data-aos-duration="750"
     >
+    <!-- data-aos="zoom-in"
+    data-aos-delay="100"
+    data-aos-once="true"
+    data-aos-duration="750" -->
       <template v-slot:collection-header-slot>
         <div class="row">
           <div style="max-width: 75px" class="col">
             <img class="avatar" alt="Avatar" src="/images/MeeW.jpg" />
           </div>
           <div class="col nopadding">
-            <p style="padding: 8.25px">Datamatiker praktikophold hos MeeW</p>
+            <p style="padding: 8.25px">{{$t('meewHeader')}}</p>
           </div>
         </div>
       </template>
       <template v-slot:collection-subheader-slot>
-        <p style="font-weight: 600">Januar 2021 - April 2021</p>
+        <p style="font-weight: 600">{{$t('meewTimeframe')}}</p>
       </template>
       <template v-slot:collection-text-slot>
         <p>
-          På 5. semester på Datamatikeruddannelsen har jeg været i
-          virksomhedspraktik hos MeeW. I denne virksomhedspraktik har jeg
-          arbejdet på et kunderelateret projekt udviklet i React Native. I den
-          forbindelse har jeg været en del af alle MeeWs interne processer og
-          dette har givet mig en forståelse for, hvordan den daglige gang i en
-          IT-virksomhed fungerer samt, hvordan MeeW indrager sine kunder i
-          udviklingsfasen.
+          {{$t('meewIntro')}}
         </p>
 
-        <p style="font-weight: bold">Det jeg lærte hos MeeW:</p>
+        <p style="font-weight: bold">{{$t('meewAssignments')}}</p>
         <ul>
-          <li>Erhvervelse af kompetencer indenfor udvikling i React Native.</li>
-          <li>Bedre forståelse for den daglige gang i en IT-virksomhed.</li>
-          <li>Hvordan onboarding af projekter fungerer i praksis.</li>
-          <li>
-            Hvor vigtig kunde-kontakten og -relationen er, før under og efter
-            udviklingsfasen.
-          </li>
+          <li>{{$t('meewAssignment1')}}</li>
+          <li>{{$t('meewAssignment2')}}</li>
+          <li>{{$t('meewAssignment3')}}</li>
+          <li>{{$t('meewAssignment4')}}</li>
         </ul>
 
         <p>
-          Hent reference og anbefaling fra MeeW
+          {{$t('meewAssignmentReference')}}
           <a class="link-text" href="files/Reference_MeeW.pdf" target="_blank"
-            >her</a
+            >{{$t('here')}}</a
           >.
         </p>
       </template>
     </CollectionBig>
 
     <CollectionBig
-      data-aos="zoom-in"
-      data-aos-delay="150"
-      data-aos-once="true"
-      data-aos-duration="750"
     >
+    <!-- data-aos="zoom-in"
+    data-aos-delay="150"
+    data-aos-once="true"
+    data-aos-duration="750" -->
       <template v-slot:collection-header-slot>
         <div class="row">
           <div style="max-width: 75px" class="col">
@@ -268,43 +259,28 @@ import CollectionBig from './../components/Collection-big.vue';
             />
           </div>
           <div class="col nopadding">
-            <p style="padding: 8.25px; line-height: 2.5rem;">Lærervikar i almen- og specialklasser på Herstedøster Skole</p>
+            <p style="padding: 8.25px; line-height: 2.5rem;">{{ $t('skoleHeader') }}</p>
           </div>
         </div>
       </template>
       <template v-slot:collection-subheader-slot>
-        <p style="font-weight: 600">Oktober 2014 - Januar 2019</p>
+        <p style="font-weight: 600">{{$t('skoleTimeframe')}}</p>
       </template>
       <template v-slot:collection-text-slot>
         <p>
-          Jeg har i mine sabbatår efter gymnasiet arbejdet på Herstedøster Skole
-          som lærervikar. I denne periode har jeg haft flere del- og
-          fuldtidsansættelser i både almen og specielklasser. Dog mest i
-          specielklasser, hvori der gik børn med lidelser, som forstyrrer deres
-          opmærksomhed og aktivitet.
+          {{ $t('skoleIntro1') }}
           <br />
-          Jeg har undervist børn og unge i flere forskellige fag, herunder
-          Matematik, Dansk og Historie. Derudover har jeg været en del af den
-          daglige konflikthåndtering og ageret kommunikationsled for børn i
-          situationer, hvori de kunne have brug for hjælp eller vejledning.
-          <br />Jeg har haft kontakt og samarbejde med forældre, ledere, lærere
-          og pædagoger og har deltaget i strukturering og forberedelse af
-          undervisningertimer og de daglige forløb i klasserne.
+          {{ $t('skoleIntro2') }}
+          <br />
+          {{ $t('skoleIntro3') }} 
         </p>
 
-        <p style="font-weight: bold">Det jeg lærte hos Herstedøster Skole:</p>
+        <p style="font-weight: bold">{{ $t('skoleAssignments') }}</p>
         <ul>
-          <li>Forståelse for undervisning og pædagogik.</li>
-          <li>
-            Håndtering af elever med lidelser som opmærksomhedsforstyrrelse og
-            impulsivitet. Herunder hvordan man bedst håndterer situationer i
-            forbindelse med disse lidelser.
-          </li>
-          <li>Ansvarlig for at elever får et fagligt udbytte i timerne.</li>
-          <li>
-            Skabelse og opretholdelse af et fornuftigt undervisningsmiljø samt
-            kammeratskab i klasserne.
-          </li>
+          <li>{{$t('skoleAssignment1')}}</li>
+          <li>{{$t('skoleAssignment2')}}</li>
+          <li>{{$t('skoleAssignment3')}}</li>
+          <li>{{$t('skoleAssignment4')}}</li>
         </ul>
       </template>
     </CollectionBig>
@@ -312,12 +288,11 @@ import CollectionBig from './../components/Collection-big.vue';
     <div class="row" style="text-align: center">
       <div class="col">
         <button
-          onclick="window.scrollTo({top: 0, behavior: 'smooth'});"
-          class="btn btn-light"
-          style="border-radius: 20px"
+          onclick="document.body.scrollTo({top: 0, behavior: 'smooth'});"
+          class="custom-button"
         >
           <h5 style="font-weight: 600; margin-bottom: 0">
-            Tilbage til toppen
+            {{$t('backToTopButtonText')}}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="40"
@@ -338,15 +313,38 @@ import CollectionBig from './../components/Collection-big.vue';
   </div>
 </template>
 
-<style scoped>
+<style>
 .link-text {
   font-weight: bold !important;
   text-decoration: underline !important;
 }
 
-.btn-light {
-  color: #212529 !important;
-  padding: 15px 15px !important;
+.custom-button {
+  color: var(--color-text);
+  background-color: var(--collection-background);
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, 0.1) 0 6px 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
 @media screen and (max-width: 626px) {

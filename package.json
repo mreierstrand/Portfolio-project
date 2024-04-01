@@ -7,11 +7,14 @@
     "preview": "vite preview --port 5050"
   },
   "dependencies": {
+    "@vueuse/core": "^9.13.0",
     "bootstrap-icons": "^1.8.1",
     "vue": "^3.2.31",
+    "vue-i18n": "^9.9.0",
     "vue-router": "^4.0.12"
   },
   "devDependencies": {
+    "@types/vue-i18n": "^7.0.0",
     "@vitejs/plugin-vue": "^2.2.2",
     "vite": "^2.8.4"
   }

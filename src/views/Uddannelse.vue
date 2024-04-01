@@ -23,18 +23,30 @@ import CollectionBig from "../components/Collection-big.vue";
           <h2 class="logo">Oliver Eierstrand</h2>
         </RouterLink>
         <nav id="navbar" class="menu">
-          <RouterLink class="menu-item" to="/">Om mig</RouterLink>
+          <RouterLink class="menu-item" to="/">{{
+            $t('aboutMeNav')
+          }}</RouterLink>
           <RouterLink class="menu-item" to="/erhvervserfaring"
-            >Erhvervserfaring</RouterLink
+            >{{
+            $t('experienceNav')
+          }}</RouterLink
           >
-          <RouterLink class="menu-item" to="/projekter">Projekter</RouterLink>
+          <RouterLink class="menu-item" to="/projekter">{{
+            $t('projectsNav')
+          }}</RouterLink>
           <RouterLink class="menu-item" to="/kundskaber"
-            >IT-Kundskaber</RouterLink
+            >{{
+            $t('itSkillsNav')
+          }}</RouterLink
           >
           <RouterLink class="menu-item active" to="/uddannelse"
-            >Uddannelse</RouterLink
+            >{{
+            $t('educationNav')
+          }}</RouterLink
           >
-          <RouterLink class="menu-item" to="/kontakt">Kontakt</RouterLink>
+          <RouterLink class="menu-item" to="/kontakt">{{
+            $t('contactNav')
+          }}</RouterLink>
         </nav>
       </div>
     </div>
@@ -47,8 +59,8 @@ import CollectionBig from "../components/Collection-big.vue";
         src="/images/school.png"
         alt="Billede af skole"
       />
-      <h5 class="domain-header-mobile" style="font-weight: 600">Uddannelse</h5>
-      <h3>Information om mine uddannelser:</h3>
+      <h5 class="domain-header-mobile" style="font-weight: 600">{{ $t('educationHeader') }}</h5>
+      <h3>{{ $t('educationSubheader') }}</h3>
     </div>
 
     <CollectionBig
@@ -67,20 +79,18 @@ import CollectionBig from "../components/Collection-big.vue";
             />
           </div>
           <div class="col nopadding">
-            <p style="padding: 8.25px">Datamatikeruddannelsen</p>
+            <p style="padding: 8.25px">{{ $t('zealandHeader') }}</p>
           </div>
         </div>
       </template>
       <template v-slot:collection-subheader-slot>
-        <p style="font-weight: 600">Erhvervsakademi Zealand | 2019-2021</p>
+        <p style="font-weight: 600">{{$t('zealandTimeframe')}}</p>
       </template>
       <template v-slot:collection-text-slot>
         <p>
-          Jeg er dimitteret fra Erhvervsakademi Zealand i Roskilde i 2021, hvor
-          jeg har afsluttet uddannelsen med et gennemsnit på 10,8 og et 12-tal i
-          afsluttende Hovedopgave. <br />På 5. semester har jeg været i 10 ugers
-          erhverspraktik hos by Meew med fokus på React Native og cross-platform
-          mobiludvikling.
+          {{ $t('zealandInformation1') }}
+          <br />
+          {{ $t('zealandInformation2') }}
         </p>
       </template>
     </CollectionBig>
@@ -101,18 +111,16 @@ import CollectionBig from "../components/Collection-big.vue";
             />
           </div>
           <div class="col nopadding">
-            <p style="padding: 8.25px">Almen studentereksamen</p>
+            <p style="padding: 8.25px">{{$t('kongsholmHeader')}}</p>
           </div>
         </div>
       </template>
       <template v-slot:collection-subheader-slot>
-        <p style="font-weight: 600">Kongsholm Gymnasium &amp; HF | 2011-2014</p>
+        <p style="font-weight: 600">{{$t('kongsholmTimeframe')}}</p>
       </template>
       <template v-slot:collection-text-slot>
         <p>
-          Jeg er dimitteret fra Kongsholm Gymnasium &amp; HF i Albertslund i
-          2014, hvor jeg gik på Idrætslinjen og skrev min SRP om Blitzkrigen i
-          Engelsk og Historie.
+          {{$t('kongsholmInformation')}}
         </p>
       </template>
     </CollectionBig>

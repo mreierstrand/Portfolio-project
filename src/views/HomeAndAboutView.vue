@@ -237,6 +237,10 @@ a:hover {
   font-weight: bold;
 }
 
+.router-link-active {
+  cursor: auto !important;
+}
+
 .link-text {
   font-weight: bold !important;
   text-decoration: underline !important;

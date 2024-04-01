@@ -1,72 +1,8 @@
 <script startup>
-import CollectionSmall from "../components/Collection-small.vue";
+import CollectionSmall from '../components/Collection-small.vue';
 
 export default {
   components: { CollectionSmall },
-  data() {
-    return {
-      erfaring: [
-        {
-          id: "1",
-          name: "HTML",
-        },
-        {
-          id: "2",
-          name: "CSS",
-        },
-        {
-          id: "3",
-          name: "JavaScript",
-        },
-        {
-          id: "4",
-          name: "Vue.js",
-        },
-        {
-          id: "5",
-          name: "Bootstrap",
-        },
-        {
-          id: "6",
-          name: "Svelte",
-        },
-        {
-          id: "7",
-          name: "Mockup- & prototypeudvikling",
-        },
-        {
-          id: "8",
-          name: "Udvikling af designmanualer",
-        },
-      ],
-      arbejde: [
-        {
-          id: "1",
-          name: "Visual Studio Code",
-        },
-        {
-          id: "2",
-          name: "Docker",
-        },
-        {
-          id: "3",
-          name: "GitHub",
-        },
-        {
-          id: "4",
-          name: "GitLab",
-        },
-        {
-          id: "5",
-          name: "Google Firebase",
-        },
-        {
-          id: "6",
-          name: "Figma",
-        },
-      ],
-    };
-  },
 };
 </script>
 
@@ -127,14 +63,15 @@ export default {
       <h3>{{ $t('itSkillsShowcaseSubheader') }}</h3>
     </div>
 
-    <div class="row">
-      <div
-        class="col-12 col-md-6 mobile"
-        data-aos="zoom-in"
-        data-aos-delay="50"
-        data-aos-once="true"
-        data-aos-duration="750"
-      >
+    <div
+      class="row"
+      data-aos="zoom-in"
+      data-aos-anchor-placement="top-center"
+      data-aos-delay="50"
+      data-aos-once="true"
+      data-aos-duration="1000"
+    >
+      <div class="col-md-2 col-sm-3 col-xs-4 col-6">
         <div class="collection">
           <img src="/icons/html5.svg" alt="Html5" />
           <p>HTML5</p>
@@ -238,6 +175,18 @@ export default {
 </template>
 
 <style scoped>
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+img {
+  border: 0;
+}
+
 .logo {
   color: #191a1d;
   display: inline-block;
@@ -249,18 +198,18 @@ export default {
 }
 
 .collection {
-  padding-top: 40px !important;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 115px;
 }
 
-.collection-header-col {
-  color: #191a1d;
-  display: inline-block;
-  font-size: 24px;
-  line-height: 100%;
-  font-weight: 600;
-  letter-spacing: 0.0625rem;
-  text-transform: uppercase;
-  margin-bottom: 40px;
+.collection img {
+  width: 80px;
+  height: auto;
+  padding: 15px 5px;
 }
 
 .collection img {

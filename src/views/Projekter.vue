@@ -121,7 +121,7 @@ import CollectionBig from '../components/Collection-big.vue';
 
       <div class="col">
         <CollectionBig
-          style="background-color: #FEB5BB !important;"
+          style="background-color: #feb5bb !important"
           data-aos="zoom-in"
           data-aos-delay="50"
           data-aos-once="true"
@@ -180,7 +180,7 @@ import CollectionBig from '../components/Collection-big.vue';
               <a
                 href="https://lassox.com/om-os/kunder"
                 target="_blank"
-                class="btn btn-light text-white"
+                class="btn btn-light"
                 style="color: #181818 !important"
                 >{{ $t('lassoWatchLive') }}</a
               >
@@ -249,14 +249,14 @@ import CollectionBig from '../components/Collection-big.vue';
               <a
                 href="https://hjemhed.web.app/"
                 target="_blank"
-                class="btn btn-light text-white"
+                class="btn btn-light"
                 style="color: #181818 !important"
                 >{{ $t('lassoWatchLive') }}</a
               >
               <a
                 href="https://github.com/mreierstrand/5sem-eksamensprojekt"
                 target="_blank"
-                class="btn btn-light text-white"
+                class="btn btn-light"
                 style="color: #181818 !important"
                 >GitHub</a
               >
@@ -365,6 +365,15 @@ import CollectionBig from '../components/Collection-big.vue';
 </template>
 
 <style>
+a.menu-item:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #518882;
+}
+.btn-light:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #518882;
+}
+
 .project-collection {
   height: 400px;
 }

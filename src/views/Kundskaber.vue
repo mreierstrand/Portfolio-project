@@ -26,16 +26,24 @@ export default {
           <h2 class="logo">Oliver Eierstrand</h2>
         </RouterLink>
         <nav id="navbar" class="menu">
-          <RouterLink class="menu-item" to="/">Om mig</RouterLink>
-          <RouterLink class="menu-item" to="/erhvervserfaring"
-            >Erhvervserfaring</RouterLink
-          >
-          <RouterLink class="menu-item" to="/projekter">Projekter</RouterLink>
-          <RouterLink class="menu-item active" to="/kundskaber"
-            >IT-Kundskaber</RouterLink
-          >
-          <RouterLink class="menu-item" to="/uddannelse">Uddannelse</RouterLink>
-          <RouterLink class="menu-item" to="/kontakt">Kontakt</RouterLink>
+          <RouterLink class="menu-item" to="/">{{
+            $t('aboutMeNav')
+          }}</RouterLink>
+          <RouterLink class="menu-item" to="/erhvervserfaring">{{
+            $t('experienceNav')
+          }}</RouterLink>
+          <RouterLink class="menu-item" to="/projekter">{{
+            $t('projectsNav')
+          }}</RouterLink>
+          <RouterLink class="menu-item active" to="/kundskaber">{{
+            $t('itSkillsNav')
+          }}</RouterLink>
+          <RouterLink class="menu-item" to="/uddannelse">{{
+            $t('educationNav')
+          }}</RouterLink>
+          <RouterLink class="menu-item" to="/kontakt">{{
+            $t('contactNav')
+          }}</RouterLink>
         </nav>
       </div>
     </div>
@@ -50,9 +58,9 @@ export default {
         alt="Computer billede"
       />
       <h5 class="domain-header-mobile" style="font-weight: 600">
-        IT-Kundskaber
+        {{ $t('itSkillsShowcaseHeader') }}
       </h5>
-      <h3>Oversigt over mine IT-kundskaber:</h3>
+      <h3>{{ $t('itSkillsShowcaseSubheader') }}</h3>
     </div>
 
     <div
@@ -140,12 +148,12 @@ export default {
     <div class="row d-block d-sm-none" style="text-align: center">
       <div class="col">
         <button
-          onclick="window.scrollTo({top: 0, behavior: 'smooth'});"
-          class="btn btn-light"
+          onclick="document.body.scrollTo({top: 0, behavior: 'smooth'});"
+          class="custom-button"
           style="border-radius: 20px"
         >
-          <h5 style="font-weight: 600; margin-bottom: 0">
-            Tilbage til toppen
+          <h5 class="nopadding" style="font-weight: 600">
+            {{ $t('backToTopButtonText') }}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="40"
@@ -204,9 +212,10 @@ img {
   padding: 15px 5px;
 }
 
-.btn-light {
-  color: #212529 !important;
-  padding: 15px 15px !important;
+.collection img {
+  width: 80px;
+  height: auto;
+  padding: 15px 5px;
 }
 
 @media screen and (max-width: 626px) {
@@ -214,6 +223,7 @@ img {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+
   .domain-header-mobile {
     margin-top: 80px;
   }

@@ -52,7 +52,7 @@ import { RouterLink, RouterView } from 'vue-router';
 }
 
 .logo {
-  color: #191a1d;
+  color: var(--color-text);
   display: inline-block;
   font-size: 1.75rem;
   line-height: 100%;

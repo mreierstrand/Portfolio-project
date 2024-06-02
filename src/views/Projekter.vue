@@ -24,18 +24,24 @@ import CollectionBig from '../components/Collection-big.vue';
           <h2 class="logo">Oliver Eierstrand</h2>
         </RouterLink>
         <nav id="navbar" class="menu">
-          <RouterLink class="menu-item" to="/">{{$t('aboutMeNav')}}</RouterLink>
-          <RouterLink class="menu-item" to="/erhvervserfaring"
-            >{{$t('experienceNav')}}</RouterLink
-          >
-          <RouterLink class="menu-item active" to="/projekter"
-            >{{$t('projectsNav')}}</RouterLink
-          >
-          <RouterLink class="menu-item" to="/kundskaber"
-            >{{$t('itSkillsNav')}}</RouterLink
-          >
-          <RouterLink class="menu-item" to="/uddannelse">{{$t('educationNav')}}</RouterLink>
-          <RouterLink class="menu-item" to="/kontakt">{{$t('contactNav')}}</RouterLink>
+          <RouterLink class="menu-item" to="/">{{
+            $t('aboutMeNav')
+          }}</RouterLink>
+          <RouterLink class="menu-item" to="/erhvervserfaring">{{
+            $t('experienceNav')
+          }}</RouterLink>
+          <RouterLink class="menu-item active" to="/projekter">{{
+            $t('projectsNav')
+          }}</RouterLink>
+          <RouterLink class="menu-item" to="/kundskaber">{{
+            $t('itSkillsNav')
+          }}</RouterLink>
+          <RouterLink class="menu-item" to="/uddannelse">{{
+            $t('educationNav')
+          }}</RouterLink>
+          <RouterLink class="menu-item" to="/kontakt">{{
+            $t('contactNav')
+          }}</RouterLink>
         </nav>
       </div>
     </div>
@@ -48,7 +54,9 @@ import CollectionBig from '../components/Collection-big.vue';
         src="/images/desktop.png"
         alt="Desktop computer"
       />
-      <h5 class="domain-header-mobile" style="font-weight: 600">{{ $t('projectsHeader') }}</h5>
+      <h5 class="domain-header-mobile" style="font-weight: 600">
+        {{ $t('projectsHeader') }}
+      </h5>
       <h3>{{ $t('projectsSubheader') }}</h3>
     </div>
 
@@ -71,16 +79,18 @@ import CollectionBig from '../components/Collection-big.vue';
                 />
               </div>
               <div class="col nopadding">
-                <p style="padding: 8.25px">{{$t('portfolioHeader')}}</p>
+                <p style="padding: 8.25px">{{ $t('portfolioHeader') }}</p>
               </div>
             </div>
           </template>
           <template v-slot:collection-subheader-slot>
-            <p style="font-weight: 600; line-height: 32px">{{$t('portfolioSubheader')}}</p>
+            <p style="font-weight: 600; line-height: 32px">
+              {{ $t('portfolioSubheader') }}
+            </p>
           </template>
           <template v-slot:collection-text-slot>
             <p>
-              {{$t('portfolioInformation')}}
+              {{ $t('portfolioInformation') }}
             </p>
 
             <p style="font-weight: bold">
@@ -111,7 +121,7 @@ import CollectionBig from '../components/Collection-big.vue';
                 href="https://github.com/mreierstrand/Portfolio-project"
                 target="_blank"
                 class="btn btn-light"
-                style="color: #181818 !important; background-color: white;"
+                style="color: #181818 !important; background-color: white"
                 >GitHub</a
               >
             </ul>
@@ -137,7 +147,9 @@ import CollectionBig from '../components/Collection-big.vue';
                 />
               </div>
               <div class="col nopadding">
-                <p class="p-dark" style="padding: 8.25px">{{ $t('lassoProjectHeader') }}</p>
+                <p class="p-dark" style="padding: 8.25px">
+                  {{ $t('lassoProjectHeader') }}
+                </p>
               </div>
             </div>
           </template>
@@ -209,7 +221,9 @@ import CollectionBig from '../components/Collection-big.vue';
                 />
               </div>
               <div class="col nopadding">
-                <p class="p-dark" style="padding: 8.25px">{{ $t('hjemhedHeader')  }}</p>
+                <p class="p-dark" style="padding: 8.25px">
+                  {{ $t('hjemhedHeader') }}
+                </p>
               </div>
             </div>
           </template>
@@ -284,7 +298,9 @@ import CollectionBig from '../components/Collection-big.vue';
                 />
               </div>
               <div class="col nopadding">
-                <p class="p-dark" style="padding: 8.25px">{{ $t('letItGrowHeader') }}</p>
+                <p class="p-dark" style="padding: 8.25px">
+                  {{ $t('letItGrowHeader') }}
+                </p>
               </div>
             </div>
           </template>
@@ -322,8 +338,8 @@ import CollectionBig from '../components/Collection-big.vue';
                 target="_blank"
                 class="btn btn-light"
                 style="color: #181818 !important"
-                >{{ $t('letItGrowWatchLive') }} </a
-              >
+                >{{ $t('letItGrowWatchLive') }}
+              </a>
               <a
                 href="https://github.com/Ojay89/LetItGrow"
                 target="_blank"
@@ -339,11 +355,11 @@ import CollectionBig from '../components/Collection-big.vue';
     <div class="row button-up" style="text-align: center; display: block">
       <div class="col">
         <button
-          onclick="document.body.scrollTo({top: 0, behavior: 'smooth'});"
+          onclick="window.scrollTo({top: 0, behavior: 'smooth'});"
           class="custom-button"
         >
           <h5 style="font-weight: 600; margin-bottom: 0">
-            {{$t('backToTopButtonText')}}
+            {{ $t('backToTopButtonText') }}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="40"

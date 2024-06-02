@@ -288,7 +288,7 @@ import CollectionBig from './../components/Collection-big.vue';
     <div class="row" style="text-align: center">
       <div class="col">
         <button
-          onclick="document.body.scrollTo({top: 0, behavior: 'smooth'});"
+          onclick="window.scrollTo({top: 0, behavior: 'smooth'});"
           class="custom-button"
         >
           <h5 style="font-weight: 600; margin-bottom: 0">

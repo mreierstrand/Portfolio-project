@@ -148,7 +148,7 @@ export default {
     <div class="row d-block d-sm-none" style="text-align: center">
       <div class="col">
         <button
-          onclick="document.body.scrollTo({top: 0, behavior: 'smooth'});"
+          onclick="window.scrollTo({top: 0, behavior: 'smooth'});"
           class="custom-button"
           style="border-radius: 20px"
         >

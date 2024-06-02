@@ -1,4 +1,5 @@
 {
+  "selectLang": "Choose language",
   "aboutMeNav": "About me",
   "experienceNav": "Work Experience",
   "projectsNav": "Projects",
@@ -7,7 +8,7 @@
   "contactNav": "Contact",
   "backToTopButtonText": "Back to top",
 
-  "introduction": "My name is Oliver Eierstrand. I am 27 years old and live in the capital area. I am a graduate in Computer Science at Business Academy Zealand in Roskilde, and I have a great interest in Frontend and Web Development.",
+  "introduction": "My name is Oliver Eierstrand. I am 28 years old and live in the capital area. I am a graduate in Computer Science at Business Academy Zealand in Roskilde, and I have a great interest in Frontend and Web Development.",
   "findMeOn": "I can also be found on:",
   "and": "and",
   "resumeFind": "and my resume can be seen",
@@ -56,8 +57,8 @@
   "lassoIntro1": "After completing my education, I did a company internship at Lasso X to gain further experience in frontend development in HTML, CSS, JavaScript, and Vue.js.",
   "lassoIntro2": "My primary tasks during the internship at Lasso included developing a subpage for ",
   "lassoIntro21": "called 'Meet Our Customers.' The direct link can be found",
-  "lassoIntro22":"In this project, I worked with videos, customer testimonials, and a contact form. Additionally, I worked on the Lasso portal, where I made improvements to existing code/features and added additional functionality for Lasso X's paying product users.",
-  
+  "lassoIntro22": "In this project, I worked with videos, customer testimonials, and a contact form. Additionally, I worked on the Lasso portal, where I made improvements to existing code/features and added additional functionality for Lasso X's paying product users.",
+
   "lassoAssignments": "What I learned at Lasso X:",
   "lassoAssignment1": "Expansion of skills in frontend development.",
   "lassoAssignment2": "Better understanding of the daily operations in an IT company.",
@@ -65,7 +66,7 @@
   "lassoWorkAssignemntReference": "Get reference and recommendation from Lasso X ",
   "lasso": "Lasso X",
 
-  "meewHeader":  "Computer Science Internship at MeeW",
+  "meewHeader": "Computer Science Internship at MeeW",
   "meewTimeframe": "January 2021 - April 2021",
   "meewIntro": "During the 5th semester of my Computer Science studies, I undertook an internship at MeeW. Throughout this internship, I worked on a client-related project developed in React Native. In this capacity, I became involved in all of MeeW's internal processes, which provided me with an understanding of how the daily operations of an IT company function, as well as how MeeW engages its clients in the development phase.",
   "meewAssignments": "What I learned at MeeW:",
@@ -97,18 +98,18 @@
   "lassoSubheader": "Subpage for Lasso X website & work on Lasso Portal",
   "lassoInformation1": "The work on the subpage for Lasso X showcases Lasso X's customers' opinions about the product and includes video presentations, customer testimonials, and a contact form.",
   "lassoInformation2": "The work on Lasso X's portal involved making improvements to existing code/features and adding functionality for the portal's users.",
-  "lassoWatchLive":"Live demo",
+  "lassoWatchLive": "Live demo",
 
   "hjemhedHeader": "Hjemhed",
   "hjemhedSubheader": "Progressive Web Application",
   "hjemhedInformation1": "Hjemhed is a PWA aimed at establishing contact between new and existing residents in a local area. Residents can write and 'advertise' their local area to make it more desirable. Users can list their homes for sale without using a real estate agent.",
   "hjemhedInformation2": "Additionally, Hjemhed can act as a social media platform where users can interact and chat with each other.",
-  "hjemhedWatchLive":"Live demo",
+  "hjemhedWatchLive": "Live demo",
 
   "letItGrowHeader": "Let It Grow",
   "letItGrowSubheader": "Web application",
   "letItGrowInformation": "Let It Grow is a web application I worked on during the 3rd semester of my Computer Science education. The purpose of this web application was to create a website that provides homeowners with the best opportunities to care for their gardens.",
-  "letItGrowWatchLive":"Live demo",
+  "letItGrowWatchLive": "Live demo",
 
   "techStack": "Tech stack in this project:",
 
@@ -130,7 +131,7 @@
   "contactHeader": "Contact me",
   "contactSubheader": "If you have any questions or inquiries",
   "contactMessage1": "You can reach me on social media, via email, or at ",
-  "contactPhone":"+4540475805",
+  "contactPhone": "+4540475805",
   "contactMessage2": "If those don't work for you, you can always send me a message via the contact form. I promise to get back to you!",
   "contactName": "Name",
   "contactEmail": "Email",

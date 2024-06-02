@@ -11,8 +11,8 @@
   --color-background-light: #ffffff;
   --color-background: #ffffff;
 }
-/* 
-@media (prefers-color-scheme: dark) {
+
+/* @media (prefers-color-scheme: dark) {
   :root {
     --collection-background-dark: #2b2c32;
     --collection-background: #2b2c32;

@@ -1,12 +1,16 @@
 <template>
-  <div>
-    <button
-      class="custom-button"
-      style="border-radius: 20px"
-      @click="toggleLanguage"
+  <div class="dropdown-container">
+    <label class="language-label" for="locale">{{ $t('selectLang') }}:</label>
+    <select
+      id="locale"
+      v-model="currentLanguage"
+      @change="toggleLanguage"
+      class="custom-select"
     >
-      {{ currentLanguage }}
-    </button>
+      <option value="en">English</option>
+      <option value="da">Danish</option>
+    </select>
+    *WIP*
   </div>
 </template>
 
@@ -14,14 +18,39 @@
 export default {
   data() {
     return {
-      currentLanguage: 'Danish',
+      currentLanguage: 'en',
     };
   },
   methods: {
     toggleLanguage() {
-      this.$i18n.locale = this.$i18n.locale === 'en' ? 'da' : 'en';
-      this.currentLanguage = this.$i18n.locale === 'en' ? 'Danish' : 'English';
+      this.$i18n.locale = this.currentLanguage;
     },
   },
 };
 </script>
+
+<style>
+.language-label {
+  margin-right: 10px;
+}
+
+.dropdown-container {
+  display: inline-block;
+  position: relative;
+}
+
+.custom-select {
+  padding: 8px 32px 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  width: 110px; /* Set a fixed width */
+}
+
+.custom-select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+</style>

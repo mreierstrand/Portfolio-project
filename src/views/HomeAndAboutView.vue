@@ -46,6 +46,8 @@ import LanguageToggle from '../components/LanguageToggle.vue';
         </nav>
       </div>
     </div>
+    <LanguageToggle /> <br />
+    <br /><br />
     <Collection img_src="/images/wave.png">
       <template v-slot:collection-header-slot>
         <p>{{ $t('aboutMeNav') }}</p>
@@ -181,7 +183,7 @@ import LanguageToggle from '../components/LanguageToggle.vue';
     <div class="row" style="text-align: center">
       <div class="col">
         <button
-          onclick="document.body.scrollTo({top: 0, behavior: 'smooth'});"
+          onclick="window.scrollTo({top: 0, behavior: 'smooth'});"
           class="custom-button"
           style="border-radius: 20px"
         >
@@ -204,14 +206,12 @@ import LanguageToggle from '../components/LanguageToggle.vue';
         </button>
       </div>
     </div>
-
-    <LanguageToggle />
   </div>
 </template>
 
 <style>
 body {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
 }
 
 img {

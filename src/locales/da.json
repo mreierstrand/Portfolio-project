@@ -1,4 +1,5 @@
 {
+  "selectLang": "Vælg sprog",
   "aboutMeNav": "Om mig",
   "experienceNav": "Erhvervserfaring",
   "projectsNav": "Projekter",
@@ -7,7 +8,7 @@
   "contactNav": "Kontakt",
   "backToTopButtonText": "Tilbage til toppen",
 
-  "introduction": "Mit navn er Oliver Eierstrand. Jeg er 27 år og bor i hovedstadsområdet. Jeg er uddannet Datamatiker på Erhvervsakademi Zealand i Roskilde, og jeg har en stor interesse for Frontend- og Webudvikling.",
+  "introduction": "Mit navn er Oliver Eierstrand. Jeg er 28 år og bor i hovedstadsområdet. Jeg er uddannet Datamatiker på Erhvervsakademi Zealand i Roskilde, og jeg har en stor interesse for Frontend- og Webudvikling.",
   "findMeOn": "Jeg er desuden at finde på:",
   "and": "og",
   "resumeFind": "og mit CV kan ses",
@@ -61,7 +62,7 @@
   "lassoAssignments": "Det jeg lærte hos Lasso X:",
   "lassoAssignment1": "Udvidelse af kompetencer indenfor frontendudvikling.",
   "lassoAssignment2": "Bedre forståelse for den daglige gang i en IT-virksomhed.",
-  "lassoAssignment4": "Forståelse for arbejdsgangen i et team på 8 personer.",
+  "lassoAssignment3": "Forståelse for arbejdsgangen i et team på 8 personer.",
   "lassoWorkAssignemntReference": "Hent reference og anbefaling fra Lasso X",
   "lasso": "Lasso X",
 
@@ -97,19 +98,18 @@
   "lassoSubheader": "Underside til Lasso X hjemmeside & arbejde på Lasso Portal",
   "lassoInformation1": "Arbejdet på undersiden til Lasso X fremviser Lasso Xs kunders mening om produktet og indeholder videofremvisning, kundeudtalelser og en kontaktformular.",
   "lassoInformation2": "Arbejdet på Lasso Xs portal indeholdte udarbejdelse af forbedringer til allerede eksisterende kode/features, samt tilføjelse af funktionalitet til brug for kunder af portalen.",
-  "lassoWatchLive":"Live demo",
+  "lassoWatchLive": "Live demo",
 
   "hjemhedHeader": "Hjemhed",
   "hjemhedSubheader": "Progressive Web Applikation",
   "hjemhedInformation1": "Hjemhed er en PWA, hvor hovedformålet er at etablere kontakt mellem nye og eksisterende beboere i et lokalområde. Beboere kan skrive og “markedsføre” sit lokalområd for at gøre det mere eftertragtet. Brugere kan sætte sin bolig til salg uden om en ejendomsmægler.",
   "hjemhedInformation2": "Derudover kan Hjemhed agere som et socialt medie, hvor brugere kan interagere og chatte med hinanden.",
-  "hjemhedWatchLive":"Live demo",
-
+  "hjemhedWatchLive": "Live demo",
 
   "letItGrowHeader": "Let It Grow",
   "letItGrowSubheader": "Web applikation",
   "letItGrowInformation": "Let It Grow er en webapplikation, jeg har arbejdet på i forbindelse med 3. semester på Datamatikeruddannelsen. Formålet med denne webapplikation, var at lave en hjemmeside, som giver haveejere de bedste muligheder for at pleje deres have.",
-  "letItGrowWatchLive":"Live demo",
+  "letItGrowWatchLive": "Live demo",
 
   "techStack": "Techstack i dette projekt:",
 
@@ -131,7 +131,7 @@
   "contactHeader": "Kontakt mig",
   "contactSubheader": "Hvis du har spørgsmål eller andet",
   "contactMessage1": "Så kan jeg fanges på sociale medier, via mail eller på ",
-  "contactPhone":"+4540475805",
+  "contactPhone": "+4540475805",
   "contactMessage2": "Hvis de ikke er noget for dig, kan du altid sende mig en besked via kontaktformen. Jeg lover at vende tilbage!",
   "contactName": "Navn",
   "contactEmail": "Email",

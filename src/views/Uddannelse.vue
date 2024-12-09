@@ -1,6 +1,6 @@
 <script setup>
-import Collection from "../components/Collection.vue";
-import CollectionBig from "../components/Collection-big.vue";
+import Collection from '../components/Collection.vue';
+import CollectionBig from '../components/Collection-big.vue';
 </script>
 
 <template>
@@ -26,31 +26,31 @@ import CollectionBig from "../components/Collection-big.vue";
           <RouterLink class="menu-item" to="/">{{
             $t('aboutMeNav')
           }}</RouterLink>
-          <RouterLink class="menu-item" to="/erhvervserfaring"
-            >{{
+          <RouterLink class="menu-item" to="/erhvervserfaring">{{
             $t('experienceNav')
-          }}</RouterLink
-          >
+          }}</RouterLink>
           <RouterLink class="menu-item" to="/projekter">{{
             $t('projectsNav')
           }}</RouterLink>
-          <RouterLink class="menu-item" to="/kundskaber"
-            >{{
+          <RouterLink class="menu-item" to="/kundskaber">{{
             $t('itSkillsNav')
-          }}</RouterLink
-          >
-          <RouterLink class="menu-item active" to="/uddannelse"
-            >{{
+          }}</RouterLink>
+          <RouterLink class="menu-item active" to="/uddannelse">{{
             $t('educationNav')
-          }}</RouterLink
-          >
+          }}</RouterLink>
           <RouterLink class="menu-item" to="/kontakt">{{
             $t('contactNav')
           }}</RouterLink>
         </nav>
       </div>
     </div>
-    <div class="domain-header mobile">
+    <div
+      class="domain-header mobile"
+      data-aos="fade-right"
+      data-aos-delay="50"
+      data-aos-once="true"
+      data-aos-duration="750"
+    >
       <img
         class="domain-header-img"
         align="left"
@@ -59,7 +59,9 @@ import CollectionBig from "../components/Collection-big.vue";
         src="/images/school.png"
         alt="Billede af skole"
       />
-      <h5 class="domain-header-mobile" style="font-weight: 600">{{ $t('educationHeader') }}</h5>
+      <h5 class="domain-header-mobile" style="font-weight: 600">
+        {{ $t('educationHeader') }}
+      </h5>
       <h3>{{ $t('educationSubheader') }}</h3>
     </div>
 
@@ -84,7 +86,7 @@ import CollectionBig from "../components/Collection-big.vue";
         </div>
       </template>
       <template v-slot:collection-subheader-slot>
-        <p style="font-weight: 600">{{$t('zealandTimeframe')}}</p>
+        <p style="font-weight: 600">{{ $t('zealandTimeframe') }}</p>
       </template>
       <template v-slot:collection-text-slot>
         <p>
@@ -111,16 +113,16 @@ import CollectionBig from "../components/Collection-big.vue";
             />
           </div>
           <div class="col nopadding">
-            <p style="padding: 8.25px">{{$t('kongsholmHeader')}}</p>
+            <p style="padding: 8.25px">{{ $t('kongsholmHeader') }}</p>
           </div>
         </div>
       </template>
       <template v-slot:collection-subheader-slot>
-        <p style="font-weight: 600">{{$t('kongsholmTimeframe')}}</p>
+        <p style="font-weight: 600">{{ $t('kongsholmTimeframe') }}</p>
       </template>
       <template v-slot:collection-text-slot>
         <p>
-          {{$t('kongsholmInformation')}}
+          {{ $t('kongsholmInformation') }}
         </p>
       </template>
     </CollectionBig>

@@ -35,7 +35,11 @@ import CollectionBig from './../components/Collection-big.vue';
         </nav>
       </div>
     </div>
-    <div class="domain-header mobile">
+    <div class="domain-header mobile"
+      data-aos="fade-right"
+      data-aos-delay="50"
+      data-aos-once="true"
+      data-aos-duration="750">
       <img
         class="domain-header-img"
         align="left"

@@ -24,6 +24,7 @@ import LanguageToggle from '../components/LanguageToggle.vue';
         <RouterLink to="/">
           <h2 class="logo">Oliver Eierstrand</h2>
         </RouterLink>
+        <LanguageToggle />
         <nav id="navbar" class="menu">
           <RouterLink class="menu-item active" to="/">{{
             $t('aboutMeNav')
@@ -46,9 +47,15 @@ import LanguageToggle from '../components/LanguageToggle.vue';
         </nav>
       </div>
     </div>
-    <LanguageToggle /> <br />
-    <br /><br />
-    <Collection img_src="/images/wave.png">
+    <!-- <LanguageToggle /> <br />
+    <br /><br /> -->
+    <Collection
+      img_src="/images/wave.png"
+      data-aos="fade-down"
+      data-aos-delay="50"
+      data-aos-once="true"
+      data-aos-duration="750"
+    >
       <template v-slot:collection-header-slot>
         <p>{{ $t('aboutMeNav') }}</p>
       </template>
@@ -100,7 +107,7 @@ import LanguageToggle from '../components/LanguageToggle.vue';
       data-aos-duration="1000"
     >
       <div class="row">
-        <div class="col-12 col-md-6 col-mobile">
+        <div class="col-12 col-md-6 col-mobile padding-lr padding-r">
           <CollectionSmall img_src="/images/curious.png">
             <template v-slot:collection-header-slot>
               <p>{{ $t('curiousHeader') }}</p>
@@ -112,7 +119,7 @@ import LanguageToggle from '../components/LanguageToggle.vue';
             </template>
           </CollectionSmall>
         </div>
-        <div class="col-12 col-md-6 col-mobile">
+        <div class="col-12 col-md-6 col-mobile padding-lr">
           <CollectionSmall img_src="/images/magnifying.png">
             <template v-slot:collection-header-slot>
               <p>{{ $t('detailHeader') }}</p>
@@ -127,7 +134,7 @@ import LanguageToggle from '../components/LanguageToggle.vue';
       </div>
 
       <div class="row">
-        <div class="col-12 col-md-6 col-mobile">
+        <div class="col-12 col-md-6 col-mobile padding-lr padding-r">
           <CollectionSmall img_src="/images/graduation.png">
             <template v-slot:collection-header-slot>
               <p>{{ $t('newGraduateHeader') }}</p>
@@ -139,7 +146,7 @@ import LanguageToggle from '../components/LanguageToggle.vue';
             </template>
           </CollectionSmall>
         </div>
-        <div class="col-12 col-md-6 col-mobile">
+        <div class="col-12 col-md-6 col-mobile padding-lr">
           <CollectionSmall img_src="/images/computer.png">
             <template v-slot:collection-header-slot>
               <p>{{ $t('goodGradesHeader') }}</p>
@@ -154,7 +161,7 @@ import LanguageToggle from '../components/LanguageToggle.vue';
       </div>
 
       <div class="row">
-        <div class="col-12 col-md-6 col-mobile">
+        <div class="col-12 col-md-6 col-mobile padding-lr padding-r">
           <CollectionSmall img_src="/images/attention-to-detail.png">
             <template v-slot:collection-header-slot>
               <p>{{ $t('outgoingHeader') }}</p>
@@ -165,7 +172,7 @@ import LanguageToggle from '../components/LanguageToggle.vue';
           </CollectionSmall>
         </div>
 
-        <div class="col-12 col-md-6 col-mobile">
+        <div class="col-12 col-md-6 col-mobile padding-lr ">
           <CollectionSmall img_src="/images/running.png">
             <template v-slot:collection-header-slot>
               <p>{{ $t('initiativeHeader') }}</p>
@@ -324,6 +331,15 @@ a:hover {
 
 .active {
   color: #518882 !important;
+}
+
+.padding-lr {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.padding-r {
+  padding-right: 30px;
 }
 
 @media screen and (max-width: 626px) {

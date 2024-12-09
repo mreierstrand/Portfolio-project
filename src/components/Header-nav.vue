@@ -39,6 +39,7 @@ import { RouterLink, RouterView } from 'vue-router';
 .header-menu {
   align-self: center;
   width: 100%;
+  position:relative;
 }
 
 .header-img {

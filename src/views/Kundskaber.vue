@@ -1,13 +1,66 @@
-<script startup>
+<script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
 import CollectionSmall from '../components/Collection-small.vue';
+import LanguageToggle from '../components/LanguageToggle.vue';
 
-export default {
-  components: { CollectionSmall },
+const menuOpen = ref(false);
+const windowWidth = ref(window.innerWidth);
+
+const toggleMenu = () => {
+  menuOpen.value = !menuOpen.value;
 };
+
+const updateWindowWidth = () => {
+  windowWidth.value = window.innerWidth;
+  if (windowWidth.value > 626) {
+    menuOpen.value = false;
+  }
+};
+
+onMounted(() => {
+  window.addEventListener('resize', updateWindowWidth);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('resize', updateWindowWidth);
+});
 </script>
 
 <template>
   <div class="wrap mobile-wrapper">
+    <button
+      v-if="windowWidth <= 626"
+      class="burger-menu"
+      @click="toggleMenu"
+      aria-label="Toggle navigation"
+    >
+      <span class="burger-icon"></span>
+      <span class="burger-icon"></span>
+      <span class="burger-icon"></span>
+    </button>
+
+    <nav
+      v-if="menuOpen && windowWidth <= 626"
+      class="burger-navigation"
+      @click="toggleMenu"
+    >
+      <RouterLink class="menu-item" to="/">{{ $t('aboutMeNav') }}</RouterLink>
+      <RouterLink class="menu-item" to="/erhvervserfaring">{{
+        $t('experienceNav')
+      }}</RouterLink>
+      <RouterLink class="menu-item" to="/projekter">{{
+        $t('projectsNav')
+      }}</RouterLink>
+      <RouterLink class="menu-item active" to="/kundskaber">{{
+        $t('itSkillsNav')
+      }}</RouterLink>
+      <RouterLink class="menu-item" to="/uddannelse">{{
+        $t('educationNav')
+      }}</RouterLink>
+      <RouterLink class="menu-item" to="/kontakt">{{
+        $t('contactNav')
+      }}</RouterLink>
+    </nav>
     <div class="header">
       <div class="header-picture">
         <RouterLink to="/">
@@ -25,6 +78,7 @@ export default {
         <RouterLink to="/">
           <h2 class="logo">Oliver Eierstrand</h2>
         </RouterLink>
+        <LanguageToggle />
         <nav id="navbar" class="menu">
           <RouterLink class="menu-item" to="/">{{
             $t('aboutMeNav')
@@ -71,11 +125,9 @@ export default {
 
     <div
       class="row"
-      data-aos="zoom-in"
-      data-aos-anchor-placement="top-center"
+      data-aos="fade-up"
       data-aos-delay="50"
-      data-aos-once="true"
-      data-aos-duration="1000"
+      data-aos-duration="750"
     >
       <div class="col-md-2 col-sm-3 col-xs-4 col-6">
         <div class="collection">

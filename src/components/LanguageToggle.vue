@@ -1,6 +1,5 @@
 <template>
   <div class="flag-container">
-    <!-- Dansk flag -->
     <div class="flag-wrapper" @click="changeLanguage('da')">
       <img
         src="/src/assets/images/Flag_of_Denmark.png"
@@ -10,7 +9,6 @@
       />
       <div v-if="currentLanguage === 'da'" class="flag-active-indicator"></div>
     </div>
-    <!-- Engelsk flag -->
     <div class="flag-wrapper" @click="changeLanguage('en')">
       <img
         src="/src/assets/images/Flag_of_GB.png"
@@ -33,11 +31,13 @@ export default {
   watch: {
     currentLanguage(newLang) {
       this.$i18n.locale = newLang;
+      localStorage.setItem('language', newLang);
     },
   },
   mounted() {
-
-    this.$i18n.locale = this.currentLanguage;
+    const savedLanguage = localStorage.getItem('language') || 'da';
+    this.currentLanguage = savedLanguage;
+    this.$i18n.locale = savedLanguage;
   },
   methods: {
     changeLanguage(lang) {

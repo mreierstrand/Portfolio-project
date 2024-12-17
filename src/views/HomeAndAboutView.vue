@@ -1,12 +1,71 @@
 <script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
 import Collection from '../components/Collection.vue';
 import CollectionSmall from '../components/Collection-small.vue';
 import LanguageToggle from '../components/LanguageToggle.vue';
+
+const menuOpen = ref(false);
+const windowWidth = ref(window.innerWidth);
+
+const toggleMenu = () => {
+  menuOpen.value = !menuOpen.value;
+};
+
+const updateWindowWidth = () => {
+  windowWidth.value = window.innerWidth;
+  if (windowWidth.value > 626) {
+    menuOpen.value = false;
+  }
+};
+
+onMounted(() => {
+  window.addEventListener('resize', updateWindowWidth);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('resize', updateWindowWidth);
+});
 </script>
 
 <template>
   <div id="scrollTo"></div>
   <div class="wrap mobile-wrapper">
+    <button
+      v-if="windowWidth <= 626"
+      class="burger-menu"
+      @click="toggleMenu"
+      aria-label="Toggle navigation"
+    >
+      <span class="burger-icon"></span>
+      <span class="burger-icon"></span>
+      <span class="burger-icon"></span>
+    </button>
+
+    <nav
+      v-if="menuOpen && windowWidth <= 626"
+      class="burger-navigation"
+      @click="toggleMenu"
+    >
+      <RouterLink class="menu-item active" to="/">{{
+        $t('aboutMeNav')
+      }}</RouterLink>
+      <RouterLink class="menu-item" to="/erhvervserfaring">{{
+        $t('experienceNav')
+      }}</RouterLink>
+      <RouterLink class="menu-item" to="/projekter">{{
+        $t('projectsNav')
+      }}</RouterLink>
+      <RouterLink class="menu-item" to="/kundskaber">{{
+        $t('itSkillsNav')
+      }}</RouterLink>
+      <RouterLink class="menu-item" to="/uddannelse">{{
+        $t('educationNav')
+      }}</RouterLink>
+      <RouterLink class="menu-item" to="/kontakt">{{
+        $t('contactNav')
+      }}</RouterLink>
+    </nav>
+
     <div class="header">
       <div class="header-picture">
         <RouterLink to="/">
@@ -19,7 +78,6 @@ import LanguageToggle from '../components/LanguageToggle.vue';
           />
         </RouterLink>
       </div>
-
       <div class="header-menu">
         <RouterLink to="/">
           <h2 class="logo">Oliver Eierstrand</h2>
@@ -47,9 +105,8 @@ import LanguageToggle from '../components/LanguageToggle.vue';
         </nav>
       </div>
     </div>
-    <!-- <LanguageToggle /> <br />
-    <br /><br /> -->
     <Collection
+      class="top-collection"
       img_src="/images/wave.png"
       data-aos="fade-down"
       data-aos-delay="50"
@@ -172,7 +229,7 @@ import LanguageToggle from '../components/LanguageToggle.vue';
           </CollectionSmall>
         </div>
 
-        <div class="col-12 col-md-6 col-mobile padding-lr ">
+        <div class="col-12 col-md-6 col-mobile padding-lr">
           <CollectionSmall img_src="/images/running.png">
             <template v-slot:collection-header-slot>
               <p>{{ $t('initiativeHeader') }}</p>
@@ -342,6 +399,46 @@ a:hover {
   padding-right: 30px;
 }
 
+.burger-menu {
+  display: none;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 1000;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.burger-menu .burger-icon {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: var(--color-text);
+}
+
+.burger-navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--collection-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.burger-navigation .menu-item {
+  margin: 10px 0;
+  color: var(--color-text);
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 626px) {
   .col-mobile {
     padding-left: 0 !important;
@@ -356,6 +453,27 @@ a:hover {
 
   .mobile-wrapper {
     padding-top: 20px !important;
+  }
+
+  .padding-r {
+    padding-right: 0;
+  }
+
+  .header {
+    display: none !important;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .top-collection {
+    margin-top: 50px !important;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 626px) {
+  .padding-r {
+    padding-right: 0 !important;
   }
 }
 </style>

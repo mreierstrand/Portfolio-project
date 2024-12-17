@@ -136,7 +136,7 @@ a {
 a:hover {
   text-decoration: none;
   color: #518882 !important;
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 .page,

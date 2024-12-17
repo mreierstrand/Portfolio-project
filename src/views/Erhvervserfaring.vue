@@ -1,9 +1,69 @@
 <script setup>
-import CollectionBig from './../components/Collection-big.vue';
+import LanguageToggle from '../components/LanguageToggle.vue';
+import CollectionBig from '/src/components/Collection-big.vue';
+import { ref, onMounted, onUnmounted } from 'vue';
+
+const menuOpen = ref(false);
+const windowWidth = ref(window.innerWidth);
+
+const toggleMenu = () => {
+  menuOpen.value = !menuOpen.value;
+};
+
+const updateWindowWidth = () => {
+  windowWidth.value = window.innerWidth;
+  if (windowWidth.value > 626) {
+    menuOpen.value = false;
+  }
+};
+
+onMounted(() => {
+  window.addEventListener('resize', updateWindowWidth);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('resize', updateWindowWidth);
+});
 </script>
 
 <template>
   <div class="wrap mobile-wrapper">
+    <button
+    v-if="windowWidth <= 626"
+    class="burger-menu"
+    @click="toggleMenu"
+    aria-label="Toggle navigation"
+  >
+    <span class="burger-icon"></span>
+    <span class="burger-icon"></span>
+    <span class="burger-icon"></span>
+  </button>
+
+  <nav
+    v-if="menuOpen && windowWidth <= 626"
+    class="burger-navigation"
+    @click="toggleMenu"
+  >
+    <RouterLink class="menu-item" to="/">{{
+      $t('aboutMeNav')
+    }}</RouterLink>
+    <RouterLink class="menu-item active" to="/erhvervserfaring">{{
+      $t('experienceNav')
+    }}</RouterLink>
+    <RouterLink class="menu-item" to="/projekter">{{
+      $t('projectsNav')
+    }}</RouterLink>
+    <RouterLink class="menu-item" to="/kundskaber">{{
+      $t('itSkillsNav')
+    }}</RouterLink>
+    <RouterLink class="menu-item" to="/uddannelse">{{
+      $t('educationNav')
+    }}</RouterLink>
+    <RouterLink class="menu-item" to="/kontakt">{{
+      $t('contactNav')
+    }}</RouterLink>
+  </nav>
+
     <div class="header">
       <div class="header-picture">
         <RouterLink to="/">
@@ -21,6 +81,7 @@ import CollectionBig from './../components/Collection-big.vue';
         <RouterLink to="/">
           <h2 class="logo">Oliver Eierstrand</h2>
         </RouterLink>
+        <LanguageToggle />
         <nav id="navbar" class="menu">
           <RouterLink class="menu-item" to="/">{{$t('aboutMeNav')}}</RouterLink>
           <RouterLink class="menu-item active" to="/erhvervserfaring"
@@ -351,7 +412,66 @@ import CollectionBig from './../components/Collection-big.vue';
   touch-action: manipulation;
 }
 
+.burger-menu {
+  display: none;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 1000;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.burger-menu .burger-icon {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: var(--color-text);
+}
+
+.burger-navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--collection-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.burger-navigation .menu-item {
+  margin: 10px 0;
+  color: var(--color-text);
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 626px) {
+  .mobile-wrapper {
+    padding-top: 20px !important;
+  }
+
+  .domain-header {
+    margin-top: 50px;
+  }
+
+  .header {
+    display: none !important;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .top-collection {
+    margin-top: 50px !important;
+  }
   .mobile {
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -363,4 +483,5 @@ import CollectionBig from './../components/Collection-big.vue';
     padding-top: 20px !important;
   }
 }
+
 </style>

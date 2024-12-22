@@ -1,6 +1,7 @@
 <script setup>
-import LanguageToggle from '../components/LanguageToggle.vue';
 import CollectionBig from '/src/components/Collection-big.vue';
+import LanguageToggle from '../components/LanguageToggle.vue';
+import DarkModeToggle from '../components/DarkModeToggle.vue';
 import { ref, onMounted, onUnmounted } from 'vue';
 
 const menuOpen = ref(false);
@@ -62,6 +63,13 @@ onUnmounted(() => {
     <RouterLink class="menu-item" to="/kontakt">{{
       $t('contactNav')
     }}</RouterLink>
+
+    <div class="menu-toggles menu-item top-menu">
+      <DarkModeToggle class="center" @click.stop/>
+    </div>
+    <div class="menu-toggles menu-item">
+      <LanguageToggle class="center" @click.stop/>
+    </div>
   </nav>
 
     <div class="header">
@@ -81,6 +89,7 @@ onUnmounted(() => {
         <RouterLink to="/">
           <h2 class="logo">Oliver Eierstrand</h2>
         </RouterLink>
+        <DarkModeToggle />
         <LanguageToggle />
         <nav id="navbar" class="menu">
           <RouterLink class="menu-item" to="/">{{$t('aboutMeNav')}}</RouterLink>
@@ -206,12 +215,7 @@ onUnmounted(() => {
       </template>
     </CollectionBig>
 
-    <CollectionBig
-    >
-    <!-- data-aos="zoom-in"
-    data-aos-delay="50"
-    data-aos-once="true"
-    data-aos-duration="750" -->
+    <CollectionBig>
       <template v-slot:collection-header-slot>
         <div class="row">
           <div style="max-width: 75px" class="col">
@@ -267,12 +271,7 @@ onUnmounted(() => {
       </template>
     </CollectionBig>
 
-    <CollectionBig
-    >
-    <!-- data-aos="zoom-in"
-    data-aos-delay="100"
-    data-aos-once="true"
-    data-aos-duration="750" -->
+    <CollectionBig>
       <template v-slot:collection-header-slot>
         <div class="row">
           <div style="max-width: 75px" class="col">
@@ -308,12 +307,7 @@ onUnmounted(() => {
       </template>
     </CollectionBig>
 
-    <CollectionBig
-    >
-    <!-- data-aos="zoom-in"
-    data-aos-delay="150"
-    data-aos-once="true"
-    data-aos-duration="750" -->
+    <CollectionBig>
       <template v-slot:collection-header-slot>
         <div class="row">
           <div style="max-width: 75px" class="col">
@@ -382,6 +376,14 @@ onUnmounted(() => {
 .link-text {
   font-weight: bold !important;
   text-decoration: underline !important;
+}
+
+.menu-item {
+  color: var(--color-text) !important;
+}
+
+.menu-item.active {
+  color: #518882 !important;
 }
 
 .custom-button {

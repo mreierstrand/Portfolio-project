@@ -1,4 +1,3 @@
-/* color palette from <https://github.com/vuejs/theme> */
 :root {
   /* My custom light mode colors */
   --collection-background-light: rgb(245, 245, 246);
@@ -6,24 +5,36 @@
 
   --color-text-light: #000000;
   --color-text: #000000;
+  --color-text-green: #518885 !important;
   --text-dark: #000000;
 
   --color-background-light: #ffffff;
   --color-background: #ffffff;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --collection-background-dark: #2b2c32;
-    --collection-background: #2b2c32;
+[data-theme='light'] {
+  --collection-background-light: rgb(245, 245, 246);
+  --collection-background: rgb(245, 245, 246);
 
-    --color-text-dark: #ffffff;
-    --color-text: #ffffff;
+  --color-text-light: #000000;
+  --color-text: #000000;
+  --color-text-green: #518885 !important;
+  --text-dark: #000000;
 
-    --color-background-dark: #16171d;
-    --color-background: #16171d;
-  }
-} */
+  --color-background-light: #ffffff;
+  --color-background: #ffffff;
+}
+
+[data-theme='dark'] {
+  --collection-background-dark: #2b2c32;
+  --collection-background: #2b2c32;
+
+  --color-text-dark: #ffffff;
+  --color-text: #ffffff;
+  --color-text-green: #518885 !important;
+  --color-background-dark: #16171d;
+  --color-background: #16171d;
+}
 
 *,
 *::before,

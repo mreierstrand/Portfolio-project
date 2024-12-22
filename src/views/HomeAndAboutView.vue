@@ -1,8 +1,10 @@
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue';
 import Collection from '../components/Collection.vue';
 import CollectionSmall from '../components/Collection-small.vue';
 import LanguageToggle from '../components/LanguageToggle.vue';
+import DarkModeToggle from '../components/DarkModeToggle.vue';
+import { ref, onMounted, onUnmounted } from 'vue';
+import '@/assets/base.css';
 
 const menuOpen = ref(false);
 const windowWidth = ref(window.innerWidth);
@@ -41,11 +43,7 @@ onUnmounted(() => {
       <span class="burger-icon"></span>
     </button>
 
-    <nav
-      v-if="menuOpen && windowWidth <= 626"
-      class="burger-navigation"
-      @click="toggleMenu"
-    >
+    <nav v-if="menuOpen && windowWidth <= 626" class="burger-navigation">
       <RouterLink class="menu-item active" to="/">{{
         $t('aboutMeNav')
       }}</RouterLink>
@@ -64,6 +62,13 @@ onUnmounted(() => {
       <RouterLink class="menu-item" to="/kontakt">{{
         $t('contactNav')
       }}</RouterLink>
+
+      <div class="menu-toggles menu-item top-menu">
+        <DarkModeToggle class="center" />
+      </div>
+      <div class="menu-toggles menu-item">
+        <LanguageToggle class="center" />
+      </div>
     </nav>
 
     <div class="header">
@@ -80,8 +85,9 @@ onUnmounted(() => {
       </div>
       <div class="header-menu">
         <RouterLink to="/">
-          <h2 class="logo">Oliver Eierstrand</h2>
+          <h1 class="logo">Oliver Eierstrand</h1>
         </RouterLink>
+        <DarkModeToggle />
         <LanguageToggle />
         <nav id="navbar" class="menu">
           <RouterLink class="menu-item active" to="/">{{
@@ -105,6 +111,8 @@ onUnmounted(() => {
         </nav>
       </div>
     </div>
+
+    <!-- Indhold -->
     <Collection
       class="top-collection"
       img_src="/images/wave.png"
@@ -117,9 +125,7 @@ onUnmounted(() => {
         <p>{{ $t('aboutMeNav') }}</p>
       </template>
       <template v-slot:collection-text-slot>
-        <p>
-          {{ $t('introduction') }}
-        </p>
+        <p>{{ $t('introduction') }}</p>
         <p>
           {{ $t('findMeOn') }}
           <a
@@ -294,20 +300,33 @@ a {
   text-decoration-color: transparent;
 }
 
-a:hover {
-  text-decoration: none;
-  color: #518882 !important;
-  cursor: pointer;
-  font-weight: bold;
-}
-
 .router-link-active {
   cursor: auto !important;
 }
 
 .link-text {
-  font-weight: bold !important;
-  text-decoration: underline !important;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+[data-theme='dark'] .link-text {
+  color: var(--color-text) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  .link-text:hover {
+    color: var(--color-text-green) !important;
+  }
+}
+
+[data-theme='light'] .link-text:hover {
+  color: #518885 !important;
+}
+
+@media (prefers-color-scheme: light) {
+  .link-text:hover {
+    color: #518885 !important;
+  }
 }
 
 .page,
@@ -437,6 +456,24 @@ a:hover {
   color: var(--color-text);
   font-size: 1.5rem;
   text-decoration: none;
+}
+
+.menu-toggles {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center !important;
+  width: 30%;
+}
+
+.top-menu {
+  margin-top: 50px !important;
+}
+
+.center {
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
 }
 
 @media screen and (max-width: 626px) {

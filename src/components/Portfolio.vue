@@ -116,7 +116,6 @@ import HeaderNav from './Header-nav.vue';
 html,
 body {
   width: 100% !important;
-  height: 100% !important;
   background-color: white !important;
   color: black !important;
 }
@@ -135,8 +134,8 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #518882 !important;
   cursor: pointer !important;
+  color: #518885 !important;
 }
 
 .page,

@@ -1,5 +1,6 @@
 <script setup>
 import LanguageToggle from '../components/LanguageToggle.vue';
+import DarkModeToggle from '../components/DarkModeToggle.vue';
 import { ref, onMounted, onUnmounted } from 'vue';
 
 const menuOpen = ref(false);
@@ -59,6 +60,13 @@ onUnmounted(() => {
       <RouterLink class="menu-item active" to="/kontakt">{{
         $t('contactNav')
       }}</RouterLink>
+
+      <div class="menu-toggles menu-item top-menu">
+        <DarkModeToggle class="center" @click.stop />
+      </div>
+      <div class="menu-toggles menu-item">
+        <LanguageToggle class="center" @click.stop />
+      </div>
     </nav>
     <div class="header">
       <div class="header-picture">
@@ -77,6 +85,7 @@ onUnmounted(() => {
         <RouterLink to="/">
           <h2 class="logo">Oliver Eierstrand</h2>
         </RouterLink>
+        <DarkModeToggle />
         <LanguageToggle />
         <nav id="navbar" class="menu">
           <RouterLink class="menu-item" to="/">{{
@@ -131,7 +140,7 @@ onUnmounted(() => {
       >
         <p style="font-size: 20px; line-height: 24px">
           {{ $t('contactMessage1') }}
-          <a href="tel:+4540475805"
+          <a class="link-text" href="tel:+4540475805"
             ><b>{{ $t('contactPhone') }}</b></a
           >.
         </p>
@@ -256,6 +265,21 @@ textarea:hover {
 
 p {
   margin-bottom: 20px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .fab {
+    color: var(--color-text) !important;
+  }
+  .far {
+    color: var(--color-text) !important;
+  }
+  .fab:hover {
+    color: var(--color-text-green) !important;
+  }
+  .far:hover {
+    color: var(--color-text-green) !important;
+  }
 }
 
 .form-control {

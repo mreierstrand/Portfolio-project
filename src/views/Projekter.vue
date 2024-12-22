@@ -3,6 +3,7 @@ import Collection from '../components/Collection.vue';
 import CollectionProject from '../components/Collection-project.vue';
 import CollectionBig from '../components/Collection-big.vue';
 import LanguageToggle from '../components/LanguageToggle.vue';
+import DarkModeToggle from '../components/DarkModeToggle.vue';
 
 import { ref, onMounted, onUnmounted } from 'vue';
 
@@ -63,6 +64,13 @@ onUnmounted(() => {
       <RouterLink class="menu-item" to="/kontakt">{{
         $t('contactNav')
       }}</RouterLink>
+
+      <div class="menu-toggles menu-item top-menu">
+        <DarkModeToggle class="center" @click.stop />
+      </div>
+      <div class="menu-toggles menu-item">
+        <LanguageToggle class="center" @click.stop />
+      </div>
     </nav>
 
     <div class="header">
@@ -82,6 +90,7 @@ onUnmounted(() => {
         <RouterLink to="/">
           <h2 class="logo">Oliver Eierstrand</h2>
         </RouterLink>
+        <DarkModeToggle />
         <LanguageToggle />
         <nav id="navbar" class="menu">
           <RouterLink class="menu-item" to="/">{{
@@ -447,7 +456,7 @@ onUnmounted(() => {
 </template>
 
 <style>
-a.menu-item:focus {
+a.menu-item:focus.visible {
   outline: none;
   box-shadow: 0 0 0 2px #518882;
 }

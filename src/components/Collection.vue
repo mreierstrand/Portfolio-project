@@ -21,7 +21,6 @@ export default {
 </script>
 
 <style>
-
 .collection-header {
   margin-bottom: 20px;
 }

@@ -1,26 +1,3 @@
-<template>
-  <div class="flag-container">
-    <div class="flag-wrapper" @click="changeLanguage('da')">
-      <img
-        src="/src/assets/images/Flag_of_Denmark.png"
-        alt="Danish"
-        class="flag"
-        :class="{ active: currentLanguage === 'da' }"
-      />
-      <div v-if="currentLanguage === 'da'" class="flag-active-indicator"></div>
-    </div>
-    <div class="flag-wrapper" @click="changeLanguage('en')">
-      <img
-        src="/src/assets/images/Flag_of_GB.png"
-        alt="English"
-        class="flag"
-        :class="{ active: currentLanguage === 'en' }"
-      />
-      <div v-if="currentLanguage === 'en'" class="flag-active-indicator"></div>
-    </div>
-  </div>
-</template>
-
 <script>
 export default {
   data() {
@@ -47,6 +24,29 @@ export default {
 };
 </script>
 
+<template>
+  <div class="flag-container">
+    <div class="flag-wrapper" @click="changeLanguage('da')" tabindex="0">
+      <img
+        src="/src/assets/images/Flag_of_Denmark.png"
+        alt="Danish"
+        class="flag"
+        :class="{ active: currentLanguage === 'da' }"
+      />
+      <div v-if="currentLanguage === 'da'" class="flag-active-indicator"></div>
+    </div>
+    <div class="flag-wrapper" @click="changeLanguage('en')" tabindex="0">
+      <img
+        src="/src/assets/images/Flag_of_GB.png"
+        alt="English"
+        class="flag"
+        :class="{ active: currentLanguage === 'en' }"
+      />
+      <div v-if="currentLanguage === 'en'" class="flag-active-indicator"></div>
+    </div>
+  </div>
+</template>
+
 <style scoped>
 .flag-container {
   position: absolute;
@@ -66,6 +66,16 @@ export default {
   width: 30px;
   height: 24px;
   cursor: pointer;
+  outline: none;
+}
+
+.flag-wrapper:focus {
+  outline: none;
+}
+
+.flag-wrapper:focus-visible {
+  outline: 2px solid rgb(16, 16, 16);
+  outline-offset: 3px;
 }
 
 .flag.active .flag-active-indicator {
@@ -91,11 +101,5 @@ export default {
   background-color: #518882;
   transform: translateY(2px);
   z-index: -1;
-}
-
-@media screen and (max-width: 626px) {
-  .flag-container {
-    display: none;
-  }
 }
 </style>

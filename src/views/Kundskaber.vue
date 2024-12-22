@@ -2,6 +2,7 @@
 import { ref, onMounted, onUnmounted } from 'vue';
 import CollectionSmall from '../components/Collection-small.vue';
 import LanguageToggle from '../components/LanguageToggle.vue';
+import DarkModeToggle from '../components/DarkModeToggle.vue';
 
 const menuOpen = ref(false);
 const windowWidth = ref(window.innerWidth);
@@ -60,6 +61,13 @@ onUnmounted(() => {
       <RouterLink class="menu-item" to="/kontakt">{{
         $t('contactNav')
       }}</RouterLink>
+
+      <div class="menu-toggles menu-item top-menu">
+        <DarkModeToggle class="center" @click.stop />
+      </div>
+      <div class="menu-toggles menu-item">
+        <LanguageToggle class="center" @click.stop />
+      </div>
     </nav>
     <div class="header">
       <div class="header-picture">
@@ -78,6 +86,7 @@ onUnmounted(() => {
         <RouterLink to="/">
           <h2 class="logo">Oliver Eierstrand</h2>
         </RouterLink>
+        <DarkModeToggle />
         <LanguageToggle />
         <nav id="navbar" class="menu">
           <RouterLink class="menu-item" to="/">{{

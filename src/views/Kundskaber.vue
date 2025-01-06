@@ -1,6 +1,5 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
-import CollectionSmall from '../components/Collection-small.vue';
 import LanguageToggle from '../components/LanguageToggle.vue';
 import DarkModeToggle from '../components/DarkModeToggle.vue';
 
@@ -115,7 +114,7 @@ onUnmounted(() => {
       class="domain-header mobile"
       data-aos="fade-right"
       data-aos-delay="50"
-      data-aos-once="true"
+      data-aos-once="false"
       data-aos-duration="750"
     >
       <img
@@ -134,7 +133,7 @@ onUnmounted(() => {
 
     <div
       class="row"
-      data-aos="fade-up"
+      data-aos="zoom-in"
       data-aos-delay="50"
       data-aos-duration="750"
     >
